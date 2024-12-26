@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import DevelopmentAlert from "@/components/DevelopmentAlert";
 
 export const metadata: Metadata = {
   title: "Eduengine",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
+        <DevelopmentAlert />
         {children}
       </body>
     </html>
