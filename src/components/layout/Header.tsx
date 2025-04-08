@@ -16,7 +16,7 @@ export default function Header() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
             >
-                <Link href="/" className="text-lg font-bold">
+                <Link href="/" className="text-lg font-bold text-white">
                 <h1>Eduengine</h1>
                 </Link>
             </motion.div>
@@ -29,7 +29,7 @@ export default function Header() {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <Link href={`/${item.toLowerCase()}`} className="text-black text-sm font-medium hover:text-gray-300 transition">
+                        <Link href={`/${item.toLowerCase()}`} className="text-white text-sm font-medium hover:text-gray-300 transition">
                             {item}
                         </Link>
                     </motion.div>
