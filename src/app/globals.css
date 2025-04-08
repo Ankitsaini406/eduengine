@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -34,6 +32,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -62,6 +61,18 @@ body {
   }
 }
 
+@layer base {
+  * {
+    border-color: hsl(var(--border)); /* Replaces @apply border-border */
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Custom Scrollbar */
 *,
 *::before,
 *::after {
@@ -69,21 +80,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 6px;
   height: 6px;
-  border: 5px solid #949698bb;
-  border-radius: 25px;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
   border-radius: 25px;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
 }
