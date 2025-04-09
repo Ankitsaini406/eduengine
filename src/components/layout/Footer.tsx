@@ -15,10 +15,10 @@ export default function Footer() {
 
                 {/* Navigation Links */}
                 <nav className="flex space-x-6 mt-4 md:mt-0">
-                    <Link href="/privacy" className="text-sm hover:text-white transition">
+                    <Link href="/privacy-policy" className="text-sm hover:text-white transition">
                         Privacy Policy
                     </Link>
-                    <Link href="/terms" className="text-sm hover:text-white transition">
+                    <Link href="/terms-service" className="text-sm hover:text-white transition">
                         Terms of Service
                     </Link>
                     <Link href="/contact" className="text-sm hover:text-white transition">
