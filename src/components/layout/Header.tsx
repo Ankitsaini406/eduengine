@@ -9,7 +9,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[90%] max-w-4xl px-6 py-3 rounded-xl bg-white/10 backdrop-blur-md shadow-lg border border-white/20"
+            className="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[90%] max-w-4xl px-6 py-3 rounded-xl bg-red-800/30 backdrop-blur-md shadow-lg border border-white/20"
         >
             {/* Logo */}
             <motion.div
