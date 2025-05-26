@@ -1,52 +1,70 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import Link from "next/link";
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
-    return (
-        <motion.nav
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="sticky top-0 left-0 right-0 w-full z-50 py-3 backdrop-blur-md shadow-lg border-b border-white/20"
-        >
-            <div className="container mx-auto px-4">
-                <div className="max-w-7xl mx-auto flex items-center justify-between">
-                    {/* Logo */}
-                    <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        <Link href="/" className="text-lg font-bold text-white">
-                            <h1>Eduengine</h1>
-                        </Link>
-                    </motion.div>
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-                    {/* Navigation Links */}
+    const navItems = ['About', 'Services', 'Career'];
+
+    return (
+        <nav className="fixed top-0 left-0 right-0 w-full z-50 backdrop-blur-md shadow-lg border-b border-white/20 ">
+            <div className="container mx-auto px-4">
+                <div className="max-w-7xl mx-auto flex items-center justify-between ">
+                    {/* Logo */}
+                    <div>
+                        <Link href="/" className="text-lg font-bold text-white">
+                            <Image
+                                src="/company.webp"
+                                alt="Eduengine"
+                                width={200}
+                                height={100}
+                                className="object-fill h-14 w-auto"
+                            />
+                        </Link>
+                    </div>
+
+                    {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-6">
-                        {["About", "Services", "Contact"].map((item, index) => (
-                            <motion.div
+                        {navItems.map((item, index) => (
+                            <Link
                                 key={index}
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 0.95 }}
+                                href={`/${item.toLowerCase()}`}
+                                className="text-white text-sm font-medium hover:text-gray-300 transition"
                             >
-                                <Link href={`/${item.toLowerCase()}`} className="text-white text-sm font-medium hover:text-gray-300 transition">
-                                    {item}
-                                </Link>
-                            </motion.div>
+                                {item}
+                            </Link>
                         ))}
                     </div>
 
-                    {/* Mobile Menu Icon */}
-                    <motion.button
-                        whileTap={{ scale: 0.9 }}
-                        className="md:hidden text-white text-xl"
+                    {/* Mobile Menu Button */}
+                    <button
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        className="md:hidden text-white text-2xl focus:outline-none"
+                        aria-label="Toggle menu"
                     >
                         ☰
-                    </motion.button>
+                    </button>
                 </div>
+
+                {/* Mobile Menu Panel */}
+                {isMenuOpen && (
+                    <div className="md:hidden flex flex-col items-start gap-4 pb-4">
+                        {navItems.map((item, index) => (
+                            <Link
+                                key={index}
+                                href={`/${item.toLowerCase()}`}
+                                className="text-white text-sm font-medium hover:text-gray-300 transition"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                {item}
+                            </Link>
+                        ))}
+                    </div>
+                )}
             </div>
-        </motion.nav>
+        </nav>
     );
 }
