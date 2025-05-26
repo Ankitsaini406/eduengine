@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import FaqSection from "@/components/layout/FrequentyQuestion";
 // import FaqSection from "../faqsection/page";
 
 interface Job {
@@ -43,6 +44,39 @@ const jobs: Job[] = [
         title: "Content Writing",
         icon: "/career/content-writing.png",
         location: "SIKAR",
+    },
+];
+
+const faqQuestions = [
+    {
+        question: "How do I apply for a job at EduEngine?",
+        answer:
+            "You can apply for a job at EduEngine by visiting our Careers page, where you’ll find current openings. Submit your resume and any relevant portfolio through the application form provided.",
+    },
+    {
+        question: "Do you offer remote or hybrid work options?",
+        answer:
+            "Yes, EduEngine offers flexible work options including remote and hybrid roles, depending on the job profile and team requirements.",
+    },
+    {
+        question: "How soon will I hear back after applying?",
+        answer:
+            "We aim to respond to applicants within 5–7 business days. If your profile matches our needs, our HR team will contact you for the next steps.",
+    },
+    {
+        question: "Internships or fresher roles available?",
+        answer:
+            "Absolutely! EduEngine regularly offers internship programs and entry-level roles to help freshers gain real-world experience and kickstart their careers.",
+    },
+    {
+        question: "What benefits do you offer to employees?",
+        answer:
+            "We offer competitive salaries, flexible work hours, health insurance, professional development opportunities, and a collaborative work environment.",
+    },
+    {
+        question: "What is the interview process like at EduEngine?",
+        answer:
+            "Our interview process typically involves an initial HR screening, a technical or role-specific round, and a final cultural fit interview. The process may vary slightly based on the position.",
     },
 ];
 
@@ -92,11 +126,7 @@ export default function Page() {
                     ))}
                 </div>
             </section>
-
-            {/* FAQ Section */}
-            <div>
-                {/* <FaqSection questions={faqData} /> */}
-            </div>
+            <FaqSection questions={faqQuestions} />
         </div>
     );
 };

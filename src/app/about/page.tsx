@@ -11,7 +11,7 @@ export default function Page() {
 
     const projects: ProjectItem[] = [
         {
-            src: "/videos/webrainweb.mp4",
+            src: "/videos/webraintech.mp4",
             href: "https://webraintech.in/",
             external: true,
         },
@@ -30,12 +30,13 @@ export default function Page() {
     return (
         <div className="w-full min-h-screen">
             <div className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 z-0">
+                <div className="absolute h-full w-full z-0">
                     <video
                         src="/videos/about-us.mp4"
                         loop
                         autoPlay
                         muted
+                        className='w-full h-full object-cover'
                     />
                 </div>
                 <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center">

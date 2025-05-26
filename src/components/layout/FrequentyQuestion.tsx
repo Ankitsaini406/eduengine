@@ -9,7 +9,7 @@ export default function FaqSection({ questions }) {
   };
 
   return (
-    <div className="mt-10 px-4 lg:px-24 bg-black min-h-screen py-10">
+    <div className="mt-10 px-4 lg:px-24 py-10">
       <h2 className="text-3xl font-bold mb-10 text-center text-white">
         FREQUENTLY ASKED QUESTIONS
       </h2>
@@ -26,7 +26,7 @@ export default function FaqSection({ questions }) {
                 isOpen ? "bg-white text-black" : "bg-white text-black"
               }`}
             >
-              <div className="flex items-center justify-between text-lg">
+              <div className="flex items-center justify-between text-lg font-bold">
                 <span>{item.question}</span>
                 <span className="text-lg font-semibold">
                   {isOpen ? "−" : "+"}
@@ -34,7 +34,7 @@ export default function FaqSection({ questions }) {
               </div>
 
               {isOpen && (
-                <div className="mt-3 text-lg font-semibold text-gray-800">
+                <div className="mt-3 text-lg font-semibold opacity-60">
                   {item.answer}
                 </div>
               )}
