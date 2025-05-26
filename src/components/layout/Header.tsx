@@ -10,6 +10,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="sticky top-0 left-0 right-0 w-full z-50 py-3 backdrop-blur-md shadow-lg border-b border-white/20"
+            className="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[90%] max-w-4xl px-6 py-3 rounded-xl bg-red-800/30 backdrop-blur-md shadow-lg border border-white/20"
         >
             <div className="container mx-auto px-4">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
