@@ -78,7 +78,7 @@ export default function Page() {
                     </div>
                     <div className="mt-4 md:mt-0">
                         <label className="text-sm text-gray-400 mr-2">Sort by:</label>
-                        <select className=" border border-gray-300 text-sm px-3 py-2 rounded-md shadow-sm hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                        <select className=" text-sm px-3 py-2 rounded-md focus:ring-1 bg-background">
                             <option>Most relevant</option>
                             <option>Newest</option>
                             <option>Location</option>
@@ -128,8 +128,8 @@ function JobCard({ job }: JobCardProps) {
                     </div>
                 </div>
 
-                <Link href="/Apply">
-                    <button className="bg-indigo-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition duration-300">
+                <Link href="/career/apply" className="mt-4 sm:mt-0">
+                    <button className="bg-indigo-600 cursor-pointer text-white text-sm font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition duration-300">
                         Apply
                     </button>
                 </Link>

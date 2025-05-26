@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectItem {
@@ -12,17 +11,17 @@ export default function Page() {
 
     const projects: ProjectItem[] = [
         {
-            src: "/assest/webrainweb.gif",
+            src: "/videos/webrainweb.mp4",
             href: "https://webraintech.in/",
             external: true,
         },
         {
-            src: "/gif/eduweb.gif",
+            src: "/videos/eduweb.mp4",
             href: "https://eduengine.in/",
             external: true,
         },
         {
-            src: "/gif/tripwayweb.gif",
+            src: "/videos/tripwayweb.mp4",
             href: "https://tripwayholidays.in/",
             external: true,
         },
@@ -32,11 +31,11 @@ export default function Page() {
         <div className="w-full min-h-screen">
             <div className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <Image
-                        src="/gif/about-us.gif"
-                        alt="Background"
-                        fill
-                        priority
+                    <video
+                        src="/videos/about-us.mp4"
+                        loop
+                        autoPlay
+                        muted
                     />
                 </div>
                 <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center">
@@ -64,10 +63,11 @@ export default function Page() {
                             rel="noopener noreferrer"
                             className="group w-full sm:w-[48%] md:w-[30%] h-60 rounded-lg overflow-hidden relative"
                         >
-                            <Image
+                            <video
                                 src={item.src}
-                                alt={`project ${idx + 1}`}
-                                fill
+                                loop
+                                autoPlay
+                                muted
                                 className="filter blur-xs group-hover:blur-0"
                             />
                         </Link>
