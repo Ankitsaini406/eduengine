@@ -1,8 +1,8 @@
+
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import FaqSection from "@/components/layout/FrequentyQuestion";
-// import FaqSection from "../faqsection/page";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 
 interface Job {
     title: string;
@@ -81,6 +81,7 @@ const faqQuestions = [
 ];
 
 export default function Page() {
+
     return (
         <div className="relative w-full">
             {/* Hero Section */}
@@ -158,11 +159,86 @@ function JobCard({ job }: JobCardProps) {
                     </div>
                 </div>
 
-                <Link href="/career/apply" className="mt-4 sm:mt-0">
-                    <button className="bg-indigo-600 cursor-pointer text-white text-sm font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition duration-300">
-                        Apply
-                    </button>
-                </Link>
+                <Dialog>
+                    <DialogTrigger asChild>
+                        <button className="bg-indigo-600 cursor-pointer text-white text-sm font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition duration-300">
+                            Apply
+                        </button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-lg bg-foreground text-background">
+                        <DialogHeader>
+                            <DialogTitle className="text-background">{job.title}</DialogTitle>
+                            <DialogDescription>
+                                <span className="mt-4 text-sm text-gray-600">
+                                    Join our team as a <strong>{job.title}</strong> and contribute to real-world projects in a dynamic environment. We are looking for passionate professionals who are eager to grow with us.
+                                </span>
+                            </DialogDescription>
+                        </DialogHeader>
+
+                        {/* Form Starts Here */}
+                        <form className="mt-4 space-y-4">
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    required
+                                    className="mt-1 w-full border border-indigo-500 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    required
+                                    className="mt-1 w-full border border-indigo-500 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">Email</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required
+                                    className="mt-1 w-full border border-indigo-500 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">Address</label>
+                                <textarea
+                                    name="address"
+                                    rows={3}
+                                    className="mt-1 w-full border border-indigo-500 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">Attach Resume (PDF)</label>
+                                <input
+                                    type="file"
+                                    name="resume"
+                                    accept=".pdf"
+                                    className="mt-1 w-full text-sm text-gray-700 file:bg-indigo-600 file:text-white file:px-4 file:py-2 file:rounded file:border-none file:cursor-pointer hover:file:bg-indigo-700"
+                                />
+                            </div>
+
+                            <DialogFooter>
+                                <button
+                                    type="submit"
+                                    className="bg-indigo-600 text-white px-4 py-2 text-sm rounded hover:bg-indigo-700"
+                                >
+                                    Apply Now
+                                </button>
+                            </DialogFooter>
+                        </form>
+                    </DialogContent>
+                </Dialog>
+
+
             </div>
         </div>
     );
