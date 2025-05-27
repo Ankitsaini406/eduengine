@@ -1,7 +1,7 @@
 
 import React from "react";
 import Image from "next/image";
-import FaqSection from "@/components/layout/FrequentyQuestion";
+import FaqSection from "@/components/FrequentyQuestion";
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 
 interface Job {

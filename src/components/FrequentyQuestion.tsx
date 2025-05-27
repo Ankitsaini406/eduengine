@@ -1,10 +1,19 @@
 "use client";
 import React, { useState } from "react";
 
-export default function FaqSection({ questions }) {
+type Question = {
+  question: string;
+  answer: string;
+};
+
+interface FaqSectionProps {
+  questions: Question[];
+}
+
+export default function FaqSection({ questions }: FaqSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
