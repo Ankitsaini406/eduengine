@@ -9,6 +9,7 @@ body {
   @theme {
     --color-background: #000000;
     --color-foreground: #ffffff;
+    --color-perimary: #ef4345;
   }
 }
 

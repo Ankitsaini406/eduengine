@@ -7,7 +7,12 @@ import Link from 'next/link';
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const navItems = ['About', 'Services', 'Career'];
+    const navItems = [
+        { title: 'Services', link: '/services' },
+        { title: 'Contact Us', link: '/contact-us' },
+        { title: 'Careers', link: '/careers' }
+    ];
+
 
     return (
         <nav className="fixed top-0 left-0 right-0 w-full z-50 backdrop-blur-md shadow-lg border-b border-white/20 ">
@@ -17,7 +22,7 @@ export default function Header() {
                     <div>
                         <Link href="/" className="text-lg font-bold text-white">
                             <Image
-                                src="/company.webp"
+                                src="/logo.webp"
                                 alt="Eduengine"
                                 width={200}
                                 height={100}
@@ -31,10 +36,10 @@ export default function Header() {
                         {navItems.map((item, index) => (
                             <Link
                                 key={index}
-                                href={`/${item.toLowerCase()}`}
+                                href={`${item.link}`}
                                 className="text-white text-sm font-medium hover:text-gray-300 transition"
                             >
-                                {item}
+                                {item.title}
                             </Link>
                         ))}
                     </div>
@@ -55,11 +60,11 @@ export default function Header() {
                         {navItems.map((item, index) => (
                             <Link
                                 key={index}
-                                href={`/${item.toLowerCase()}`}
+                                href={`${item.link}`}
                                 className="text-white text-sm font-medium hover:text-gray-300 transition"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                {item}
+                                {item.title}
                             </Link>
                         ))}
                     </div>

@@ -1,8 +1,160 @@
+"use client";
 
-export default async function Page() {
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { TfiTwitter } from "react-icons/tfi";
+import { BsTwitterX } from "react-icons/bs";
+import { MdOutlineEmail, MdPerson, MdPhone } from "react-icons/md";
+
+export default function ContactPage() {
+    const [formData, setFormData] = useState({
+        fullName: "",
+        contact: "",
+        email: "",
+        message: "",
+    });
+
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: name === "contact" ? value.replace(/\D/g, "") : value,
+        }));
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const { fullName, contact, email, message } = formData;
+
+        if (!fullName || !contact || !email || !message) {
+            setStatus("error");
+            return;
+        }
+
+        setStatus("loading");
+        setTimeout(() => {
+            setStatus("success");
+            setFormData({ fullName: "", contact: "", email: "", message: "" });
+            setTimeout(() => setStatus("idle"), 4000);
+        }, 1000);
+    };
+
     return (
-        <div>
-            <h1>Contact Us</h1>
-        </div>
-    )
+        <>
+            {/* Hero Section */}
+            <div className="relative h-[70vh] md:h-[90vh] w-full">
+                <Image
+                    src="/contact-us.webp"
+                    alt="Contact Background"
+                    fill
+                    priority
+                    className="z-0 object-cover object-top"
+                />
+                <div className="relative z-10 flex h-full w-full justify-end items-center bg-black/40 px-6 md:px-20">
+                    <div className="md:w-1/2 backdrop-blur-md p-4 rounded-md bg-white/10">
+                        <h3 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white">
+                            We are here to help you 24/7, so feel free to reach out anytime
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            {/* Contact Section */}
+            <div className="grid grid-col-1 lg:grid-cols-2 xl:grid-cols-3 px-8 py-16 gap-12 bg-gradient-to-br from-[#0f0f0f] to-[#1a1a1a]">
+                {/* Left Image */}
+                <div className="w-full ">
+                    <Image
+                        src="/contact-2.webp"
+                        alt="Contact Visual"
+                        width={400}
+                        height={600}
+                        className="rounded-tr-4xl rounded-bl-4xl object-cover w-full h-full"
+                    />
+                </div>
+
+                {/* Contact Form */}
+                <div className="w-full bg-white/5 p-6 rounded-xl shadow-lg">
+                    <h1 className="text-4xl font-bold mb-8 text-center text-yellow-300">Contact Us</h1>
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        {[
+                            { name: "fullName", type: "text", placeholder: "Full Name", icon: <MdPerson /> },
+                            { name: "contact", type: "text", placeholder: "Contact Number", icon: <MdPhone /> },
+                            { name: "email", type: "email", placeholder: "Email", icon: <MdOutlineEmail /> },
+                        ].map(({ name, type, placeholder, icon }) => (
+                            <div className="relative" key={name}>
+                                <input
+                                    name={name}
+                                    type={type}
+                                    placeholder={placeholder}
+                                    value={formData[name as keyof typeof formData]}
+                                    onChange={handleChange}
+                                    className="w-full pl-10 border-b-2 border-white/40 bg-transparent focus:outline-none py-2 placeholder:text-white/70 focus:border-yellow-400"
+                                />
+                                <div className="absolute left-0 top-2.5 text-yellow-300">{icon}</div>
+                            </div>
+                        ))}
+                        <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            rows={4}
+                            value={formData.message}
+                            onChange={handleChange}
+                            className="w-full border-b-2 border-white/40 bg-transparent focus:outline-none py-2 resize-none placeholder:text-white/70 focus:border-yellow-400"
+                        />
+                        <div className="flex justify-center">
+                            <button
+                                type="submit"
+                                disabled={status === "loading"}
+                                className="bg-perimary hover:bg-perimary/80 cursor-pointer font-semibold py-3 px-6 rounded-2xl transition disabled:opacity-50"
+                            >
+                                {status === "loading" ? "Sending..." : "Send Message"}
+                            </button>
+                        </div>
+                        {status === "error" && (
+                            <p className="text-red-400 text-center">Please fill out all fields before submitting.</p>
+                        )}
+                        {status === "success" && (
+                            <p className="text-green-400 text-center">Your message has been sent successfully!</p>
+                        )}
+                    </form>
+                </div>
+
+                {/* Contact Info */}
+                <div className="w-full md:w-1/3 flex flex-col justify-center pl-4">
+                    <div className="text-lg space-y-8 mt-10 md:mt-20 text-white">
+                        <div>
+                            <p className="font-semibold text-yellow-300">Phone</p>
+                            <p>+91 8233101033</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-yellow-300">Address</p>
+                            <p>Chandpol, Sikar (Rajasthan) 332001</p>
+                        </div>
+                        <div className="flex space-x-6 mt-6">
+                            {[
+                                { href: "https://twitter.com", icon: <BsTwitterX /> },
+                                { href: "https://twitter.com", icon: <TfiTwitter /> },
+                                { href: "https://instagram.com", icon: <FaInstagram /> },
+                                { href: "https://linkedin.com", icon: <FaLinkedinIn /> },
+                            ].map(({ href, icon }, i) => (
+                                <Link
+                                    key={i}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-yellow-300 hover:text-yellow-400 transition-transform text-2xl hover:scale-125"
+                                >
+                                    {icon}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
