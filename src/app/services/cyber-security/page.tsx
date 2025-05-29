@@ -126,10 +126,10 @@ const Cybersecurity = () => {
             </div>
 
             {/* Services Grid */}
+            <h2 className="text-2xl lg:text-4xl my-8 tracking-wide pb-2 text-center">
+                SERVICES WE OFFER
+            </h2>
             <div className="container mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8">
-                <h2 className="text-2xl lg:text-4xl my-8 tracking-wide pb-2">
-                    SERVICES WE OFFER
-                </h2>
                 {services.map((service, index) => (
                     <div
                         key={index}
