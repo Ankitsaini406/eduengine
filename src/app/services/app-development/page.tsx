@@ -45,27 +45,27 @@ const steps = [
     },
     {
         title: "Planning & Strategy",
-        img: "/assets/app3.png",
+        img: "/services/app2.jpg",
         desc: "We create a roadmap, select the right tech stack, and plan features, timelines, and resources.",
     },
     {
         title: "UI/UX Design",
-        img: "/assets/app4.png",
+        img: "/services/app3.jpg",
         desc: "Our design team crafts intuitive, engaging, and user-friendly interfaces that reflect your brand.",
     },
     {
         title: "App Development",
-        img: "/assets/app5.png",
+        img: "/services/app4.jpg",
         desc: "Our developers build the front-end and back-end using clean, scalable code with regular updates and reviews.",
     },
     {
         title: "Testing & QA",
-        img: "/assets/app6.png",
+        img: "/services/app5.jpg",
         desc: "We perform thorough testing to ensure your app is bug-free, secure, and runs smoothly on all target devices.",
     },
     {
         title: "Deployment",
-        img: "/assets/app1.png",
+        img: "/services/app6.jpg",
         desc: "We launch your app on the App Store, Google Play, or web platform with full support for approvals and publishing.",
     },
 ];
@@ -87,21 +87,10 @@ const AppDevelopment = () => {
                             height={500}
                             src="/services/app-development.webp"
                             alt="App Development"
-                            className="rounded-xl shadow-xl max-w-full"
+                            className="rounded-xl max-w-full"
                         />
                     </div>
                 </div>
-
-            {/* Services Image Banner */}
-            <div className="text-center mb-20">
-                <Image
-                    width={500}
-                    height={500}
-                    src="/assets/servicess.png"
-                    alt="Services"
-                    className="rounded-xl mx-auto w-full max-w-6xl shadow-lg"
-                />
-            </div>
 
             {/* Process Section */}
             <div className="text-center max-w-7xl mx-auto">
@@ -111,18 +100,20 @@ const AppDevelopment = () => {
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className="w-[280px] p-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:-translate-y-2 transition-all duration-300 shadow-md hover:shadow-xl"
+                            className="w-[280px] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:-translate-y-2 transition-all duration-300 shadow-md hover:shadow-xl"
                         >
-                            <div className="w-[150px] h-auto mx-auto mb-4 rounded-[20%] bg-[#222] flex items-center justify-center">
+                            <div className="w-fit h-auto mx-auto mb-4 rounded-[20%] bg-[#222] flex items-center justify-center">
                                 <Image
                                     width={500}
                                     height={500}
                                     src={step.img}
                                     alt={step.title}
-                                    className="object-contain w-full h-full p-2" />
+                                    className="object-contain w-full h-full" />
                             </div>
+                            <div className="p-4">
                             <h3 className="text-xl font-semibold text-white glowing-text mb-2">{step.title}</h3>
                             <p className="text-sm text-pink-100">{step.desc}</p>
+                            </div>
                         </div>
                     ))}
                 </div>

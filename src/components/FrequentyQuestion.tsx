@@ -1,5 +1,7 @@
 "use client";
+
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 type Question = {
   question: string;
@@ -23,7 +25,7 @@ export default function FaqSection({ questions }: FaqSectionProps) {
         FREQUENTLY ASKED QUESTIONS
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-6">
         {questions.map((item, index) => {
           const isOpen = openIndex === index;
 
@@ -31,9 +33,7 @@ export default function FaqSection({ questions }: FaqSectionProps) {
             <div
               key={index}
               onClick={() => toggleFAQ(index)}
-              className={`p-5 h-fit rounded-2xl shadow-md border border-gray-700 cursor-pointer transition-all duration-300 ease-in-out ${
-                isOpen ? "bg-white text-black" : "bg-white text-black"
-              }`}
+              className="lg:w-[48%] w-full h-fit p-5 rounded-2xl shadow-md border border-gray-700 cursor-pointer bg-white text-black transition-colors duration-300"
             >
               <div className="flex items-center justify-between text-lg font-bold">
                 <span>{item.question}</span>
@@ -42,15 +42,30 @@ export default function FaqSection({ questions }: FaqSectionProps) {
                 </span>
               </div>
 
-              {isOpen && (
-                <div className="mt-3 text-lg font-semibold opacity-60">
-                  {item.answer}
-                </div>
-              )}
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    key="content"
+                    initial="collapsed"
+                    animate="open"
+                    exit="collapsed"
+                    variants={{
+                      open: { opacity: 1, height: "auto" },
+                      collapsed: { opacity: 0, height: 0 },
+                    }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                  >
+                    <div className="mt-3 text-lg font-semibold opacity-60">
+                      {item.answer}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           );
         })}
       </div>
     </div>
   );
-};
+}
