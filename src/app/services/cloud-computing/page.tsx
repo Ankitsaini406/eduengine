@@ -138,7 +138,7 @@ export default function Page() {
                                     {service.title}
                                 </h2>
                                 <p
-                                    className="text-base text-gray-300 leading-relaxed text-left lg:text-center"
+                                    className="text-base text-gray-300 leading-relaxed text-center"
                                     dangerouslySetInnerHTML={{ __html: service.description }}
                                 />
                                 {/* Optional overlay effect */}
