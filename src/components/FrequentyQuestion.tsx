@@ -25,7 +25,7 @@ export default function FaqSection({ questions }: FaqSectionProps) {
         FREQUENTLY ASKED QUESTIONS
       </h2>
 
-      <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-6">
+      <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-y-6 justify-center">
         {questions.map((item, index) => {
           const isOpen = openIndex === index;
 

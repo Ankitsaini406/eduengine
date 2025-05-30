@@ -41,37 +41,37 @@ const Cybersecurity = () => {
             title: "Incident Response & Digital Forensics",
             description:
                 "Our specialized team quickly identifies and neutralizes security breaches while conducting indepth forensic  analysis to trace their origins. We help you recover swiftly and strengthen your defenses—ensuring your operations stay secure and uninterrupted.",
-            img: "/assets/fingerprint.png",
+            img: "/services/cyber-security/user.png",
         },
         {
             title: "Data Protection with Advanced Encryption",
             description:
                 "Shield your sensitive information—both in storage and during transmission—with enterprise-grade encryption. Our end-to-end solutions ensure confidentiality, data integrity, and strong defense against unauthorized access and cyber threats.",
-            img: "/assets/encrypt.png",
+            img: "/services/cyber-security/key.png",
         },
         {
             title: "Comprehensive Protection for Every Device",
             description:
                 "Our all-in-one endpoint security solutions shield your devices and networks from malware, ransomware, and evolving cyber threats. With real-time detection and rapid response, we help protect sensitive data and keep your business running without interruption.",
-            img: "/assets/padlock.png",
+            img: "/services/cyber-security/lock.png",
         },
         {
             title: "Network Security Solutions",
             description:
                 "Protect your infrastructure from unauthorized access and data breaches with cutting-edge security solutions. Stay ahead of evolving threats and ensure network integrity with powerful firewalls and proactive defense strategies.",
-            img: "/assets/cyber-security.png",
+            img: "/services/cyber-security/network.png",
         },
         {
             title: "Cloud Security Solution",
             description:
                 "Protect your infrastructure from unauthorized access and data breaches with cutting-edge security solutions. Stay ahead of evolving threats and ensure network integrity with powerful firewalls and proactive defense strategies.",
-            img: "/assets/cloud-computing.png",
+            img: "/services/cyber-security/cloud.png",
         },
         {
             title: "Security Awareness Training",
             description:
                 "Equip your employees with the knowledge and skills to identify and prevent cyber threats. Our tailored security awareness training programs promote best practices, minimize human error, and fortify your organization’s security framework.",
-            img: "/assets/training.png",
+            img: "/services/cyber-security/secure-shield.png",
         },
         {
             title: "Backup & Disaster Recovery",
@@ -149,7 +149,7 @@ const Cybersecurity = () => {
                                     alt={service.title}
                                     className="w-16 h-16 object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
                                     width={64}
-                                    height={64}
+                                    height={100}
                                 />
                             </div>
 
