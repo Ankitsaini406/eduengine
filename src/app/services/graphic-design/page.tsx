@@ -67,38 +67,38 @@ export default function Design() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16">
-                    <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto">
-                        <div className="absolute z-10 inset-0 bg-black opacity-50 "></div>
-                        <Image src="/services/graphic-design/photo.jpg" alt="Design Element 1" fill className="object-cover" />
+                    <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto group">
+                        <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
+                        <Image src="/services/graphic-design/photo.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
-                            <h3 className="font-bold text-2xl pb-2">Photography</h3>
-                            <h5 className="text-sm opacity-60">we offer professional photography services to give your brand the perfect visual edge - from product shoots to personal portraits.</h5>
+                            <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Photography</h3>
+                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">we offer professional photography services to give your brand the perfect visual edge - from product shoots to personal portraits.</h5>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                        <div className="relative rounded-2xl overflow-hidden min-h-[200px]">
-                            <div className="absolute z-10 inset-0 bg-black opacity-50 "></div>
-                            <Image src="/services/graphic-design/graphic-wall.jpg" alt="Design Element 1" fill className="object-cover" />
+                        <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
+                            <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
+                            <Image src="/services/graphic-design/graphic-wall.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
-                                <h3 className="font-bold text-2xl pb-2">Graphic Design</h3>
-                                <h5 className="text-sm opacity-60">Along with care services, we also offer high-quality graphic design - from branding and social media posts to promotional materials.</h5>
+                                <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Graphic Design</h3>
+                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Along with care services, we also offer high-quality graphic design - from branding and social media posts to promotional materials.</h5>
                             </div>
                         </div>
-                        <div className="relative rounded-2xl overflow-hidden min-h-[200px]">
-                            <div className="absolute z-10 inset-0 bg-black opacity-50 "></div>
-                            <Image src="/services/app/app3.jpg" alt="Design Element 1" fill className="object-cover" />
+                        <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
+                            <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
+                            <Image src="/services/app/app3.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
-                                <h3 className="font-bold text-2xl pb-2">UI UX Design</h3>
-                                <h5 className="text-sm opacity-60">Beyond UI/UX, we bring your brand to life with custom graphic design for logos, flyers, and more.</h5>
+                                <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">UI UX Design</h3>
+                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Beyond UI/UX, we bring your brand to life with custom graphic design for logos, flyers, and more.</h5>
                             </div>
                         </div>
                     </div>
-                    <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto">
-                        <div className="absolute z-10 inset-0 bg-black opacity-50 "></div>
-                        <Image src="/services/graphic-design/graphic-brading.jpg" alt="Design Element 1" fill className="object-cover" />
+                    <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto group">
+                        <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
+                        <Image src="/services/graphic-design/graphic-brading.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
-                            <h3 className="font-bold text-2xl pb-2">Branding</h3>
-                            <h5 className="text-sm opacity-60">We don&apos;t just design interfaces - we also build brands. Let us craft your visual identity from the ground up.</h5>
+                            <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Branding</h3>
+                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We don&apos;t just design interfaces - we also build brands. Let us craft your visual identity from the ground up.</h5>
                         </div>
                     </div>
                 </div>
