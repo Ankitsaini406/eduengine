@@ -45,7 +45,7 @@ export default function Design() {
         { title: "App/Web U/X Design", img: "/services/graphic-design/business-cards.png" },
         { title: "3D Modelling", img: "/services/graphic-design/3d-model.png" },
         { title: "Typography", img: "/services/graphic-design/edit-text.png" },
-        { title: "Illustration", img: "/services/graphic-design/illustration.png" },
+        { title: "Illustration", img: "/services/graphic-design/pen-tool.png" },
         { title: "Videography", img: "/services/graphic-design/videography.png" },
         { title: "Print Design", img: "/services/graphic-design/printing-machine.png" },
         { title: "Banner & Ad Design", img: "/services/graphic-design/advertising.png" },
@@ -81,7 +81,7 @@ export default function Design() {
                             <Image src="/services/graphic-design/graphic-wall.jpg" alt="Design Element 1" fill className="object-cover" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2">Graphic Design</h3>
-                                <h5 className="text-sm opacity-60">Along with care services, we also offer high-qulity graphic design - from branding and social media posts to promotional materials.</h5>
+                                <h5 className="text-sm opacity-60">Along with care services, we also offer high-quality graphic design - from branding and social media posts to promotional materials.</h5>
                             </div>
                         </div>
                         <div className="relative rounded-2xl overflow-hidden min-h-[200px]">
