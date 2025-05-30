@@ -76,10 +76,12 @@ const AppDevelopment = () => {
             {/* Top Section */}
                 <div className="flex flex-wrap items-center justify-between gap-12 mb-16 max-w-7xl mx-auto">
                     <div className="max-w-xl flex-1 space-y-4">
-                        <h2 className="text-4xl font-bold uppercase text-white">
+                        <h2 className="text-4xl font-bold">
                             We build powerful, user-friendly mobile and web apps tailored to your business needs.
-                            From design to deployment, our expert team delivers innovative, scalable, and high-performance solutions that drive growth and engagement.
                         </h2>
+                        <p>
+                            From design to deployment, our expert team delivers innovative, scalable, and high-performance solutions that drive growth and engagement.
+                        </p>
                     </div>
                     <div className="flex-1 flex justify-center">
                         <Image
