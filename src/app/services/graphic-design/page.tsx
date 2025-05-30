@@ -54,7 +54,7 @@ export default function Design() {
     ];
 
     return (
-        <div className="bg-black min-h-screen py-8 px-4">
+        <div className="py-8 px-4">
             <main className="max-w-screen-xl mx-auto text-left">
                 <h1 className="text-5xl font-bold text-blue-100 text-shadow-blue mb-6 pt-16">
                     GET YOUR BEST DESIGN
@@ -66,7 +66,7 @@ export default function Design() {
                     that match your vision with style and precision.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16">
                     <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto">
                         <div className="absolute z-10 inset-0 bg-black opacity-50 "></div>
                         <Image src="/services/graphic-design/photo.jpg" alt="Design Element 1" fill className="object-cover" />
@@ -103,11 +103,11 @@ export default function Design() {
                     </div>
                 </div>
 
-                <div className="text-center mb-10">
-                    <h3 className="text-3xl text-white font-semibold mb-6 animate-pulse">
+                <div className="text-center mb-16">
+                    <h3 className="text-3xl text-white font-semibold mb-6 animate-pulse pb-5">
                         MORE SERVICES
                     </h3>
-                    <div className="grid grid-cols-3 gap-6 pb-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pb-8">
                         {serviceData.map((service) => (
                             <div
                                 key={service.title}
@@ -127,14 +127,18 @@ export default function Design() {
                     </div>
                 </div>
 
-                <div>
+                <div className="flex flex-col items-center md:flex-row gap-10">
                     <Image
                         height={300}
-                        width={600}
+                        width={400}
                         src="/services/graphic-design/graphic-success.jpg"
                         alt="Design Portfolio"
-                        className="w-full max-w-5xl mx-auto rounded-2xl shadow-xl animate-float"
+                        className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-xl shadow-gray-500"
                     />
+                    <div>
+                        <h4 className="text-3xl md:text-5xl font-bold pb-5">Your Success Our Vision</h4>
+                        <h6 className="text-base md:text-xl lg:text-2xl opacity-60">We believe great design is more than just visuals - it&apos;s a tool to drive your success. Our vision is to turn your goals into stunning creative solutions that connect, inspire, and perform. When you grow, we grow with you.</h6>
+                    </div>
                 </div>
             </main>
             <FaqSection questions={designdata} />
