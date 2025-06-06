@@ -75,7 +75,7 @@ export default function HomePage() {
             />
           </div>
           <div className="md:w-1/2 md:text-left space-y-6 flex flex-col items-center">
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-center">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight text-center">
               WE ARE AN EXPERT DIGIT SOLUTION AGENCY
             </h1>
             <TextFade titles={[
@@ -96,7 +96,7 @@ export default function HomePage() {
       </section>
 
       {/* Intro Section */}
-      <section className="container mx-auto text-center px-5 md:w-1/2 space-y-4">
+      <section className="container mx-auto text-center px-5 md:w-1/2">
         <h2 className="text-3xl font-extrabold uppercase">Our Leading Services</h2>
         <p className="text-gray-300">
           Our unmatched expertise in technology and innovation ensures strategic, secure, and scalable solutions for your business success.
@@ -104,7 +104,7 @@ export default function HomePage() {
       </section>
 
       {/* Service Blocks */}
-      <div className="border-b pb-14">
+      <div className="border-b pb-14 flex flex-col gap-10">
       {section.map((item, index) => (
         <ServiceBlock key={index} {...item} />
       ))}
