@@ -9,7 +9,8 @@ const section = [
     imgSrc: "/web.jpg",
     reverse: true,
     highlight: "Web Services",
-    color: "amber-300"
+    color: "amber-300",
+    link: '/services/web-devlopment'
   },
   {
     title: "Creative Graphic Design Services to Elevate Your Brand",
@@ -17,7 +18,8 @@ const section = [
     imgSrc: "/graphic-design.png",
     reverse: false,
     highlight: "Graphic Design",
-    color: "amber-300"
+    color: "amber-300",
+    link: '/services/graphic-design',
   },
   {
     title: "Custom Mobile App Development to Transform Your Ideas into Reality",
@@ -25,7 +27,8 @@ const section = [
     imgSrc: "/app.png",
     reverse: true,
     highlight: "App Development",
-    color: "amber-300"
+    color: "amber-300",
+    link: '/services/app-devlopment',
   },
   {
     title: "Cloud Computing Solution for Seamless Business Growth",
@@ -33,7 +36,8 @@ const section = [
     imgSrc: "/cloud.jpg",
     reverse: false,
     highlight: "Cloud Computing",
-    color: "amber-300"
+    color: "amber-300",
+    link: '/services/cloud-computing',
   },
   {
     title: "End-To-End Cyber Security Services to Safeguard Your Future",
@@ -41,7 +45,8 @@ const section = [
     imgSrc: "/cyber.jpg",
     reverse: true,
     highlight: "Cyber Security",
-    color: "amber-300"
+    color: "amber-300",
+    link: '/services/cyber-security',
   },
   {
     title: "Machine Learning Solution to Empower Your Business",
@@ -50,6 +55,7 @@ const section = [
     reverse: false,
     highlight: "Machine Learning",
     color: "amber-300",
+    link: '/services/machine-learning',
   },
 ];
 
@@ -142,6 +148,7 @@ interface ServiceBlockProps {
   reverse: boolean;
   highlight: string;
   color: string;
+  link: string;
 }
 
 function ServiceBlock({
@@ -151,6 +158,7 @@ function ServiceBlock({
   reverse,
   highlight,
   color,
+  link,
 }: ServiceBlockProps) {
   const [before, after] = title.split(highlight);
   const colorMap: Record<string, string> = {
@@ -182,12 +190,12 @@ function ServiceBlock({
         <p className="text-gray-300 text-base leading-relaxed">
           {description}
         </p>
-        <a
-          href="#more"
+        <Link
+          href={link}
           className="text-blue-500 hover:text-blue-600 font-bold hover:underline inline-flex items-center"
         >
           MORE <span className="ml-1">↗</span>
-        </a>
+        </Link>
       </div>
     </section>
   );

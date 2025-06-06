@@ -40,32 +40,32 @@ const appdata = [
 const steps = [
     {
         title: "Requirement Gathering",
-        img: "/services/app1.jpg",
+        img: "/services/app/app1.jpg",
         desc: "We start by understanding your vision, business goals, and target audience to define clear app objectives.",
     },
     {
         title: "Planning & Strategy",
-        img: "/services/app2.jpg",
+        img: "/services/app/app2.jpg",
         desc: "We create a roadmap, select the right tech stack, and plan features, timelines, and resources.",
     },
     {
         title: "UI/UX Design",
-        img: "/services/app3.jpg",
+        img: "/services/app/app3.jpg",
         desc: "Our design team crafts intuitive, engaging, and user-friendly interfaces that reflect your brand.",
     },
     {
         title: "App Development",
-        img: "/services/app4.jpg",
+        img: "/services/app/app4.jpg",
         desc: "Our developers build the front-end and back-end using clean, scalable code with regular updates and reviews.",
     },
     {
         title: "Testing & QA",
-        img: "/services/app5.jpg",
+        img: "/services/app/app5.jpg",
         desc: "We perform thorough testing to ensure your app is bug-free, secure, and runs smoothly on all target devices.",
     },
     {
         title: "Deployment",
-        img: "/services/app6.jpg",
+        img: "/services/app/app6.jpg",
         desc: "We launch your app on the App Store, Google Play, or web platform with full support for approvals and publishing.",
     },
 ];
@@ -87,7 +87,7 @@ const AppDevelopment = () => {
                         <Image
                             width={500}
                             height={500}
-                            src="/services/app-development.webp"
+                            src="/services/app/app-development.webp"
                             alt="App Development"
                             className="rounded-xl max-w-full"
                         />
