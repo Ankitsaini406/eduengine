@@ -4,12 +4,12 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
 const services = [
-    { title: 'App Development', slug: 'app-development', img: '/services/app-development.jpg' },
-    { title: 'Cloud Computing', slug: 'cloud-computing', img: '/services/cloud-computing.jpg' },
-    { title: 'Cyber Security', slug: 'cyber-security', img: '/services/cyber-security.jpg' },
-    { title: 'Machine Learning', slug: 'machine-learning', img: '/services/machine-learning.jpg' },
-    { title: 'Graphic Design', slug: 'graphic-design', img: '/services/graphic-design.jpg' },
-    { title: 'Web Devlopment', slug: 'web-devlopment', img: '/services/graphic-design.jpg' },
+    { title: 'App Development', slug: 'app-development', img: '/app.png' },
+    { title: 'Cloud Computing', slug: 'cloud-computing', img: '/cloud.jpg' },
+    { title: 'Cyber Security', slug: 'cyber-security', img: '/cyber.jpg' },
+    { title: 'Machine Learning', slug: 'machine-learning', img: '/ai.jpg' },
+    { title: 'Graphic Design', slug: 'graphic-design', img: '/graphic-design.png' },
+    { title: 'Web Devlopment', slug: 'web-devlopment', img: '/web.jpg' },
 ];
 
 export default function Page() {

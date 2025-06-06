@@ -104,9 +104,11 @@ export default function HomePage() {
       </section>
 
       {/* Service Blocks */}
+      <div className="border-b pb-14">
       {section.map((item, index) => (
         <ServiceBlock key={index} {...item} />
       ))}
+      </div>
 
       {/* Contact Section */}
       <section className="xl:container mx-auto p-5 my-10">
