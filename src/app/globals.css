@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Manrope:wght@200..800&family=Open+Sans:ital@0;1&display=swap');
 @import "tailwindcss";
 
-body {
+html, body {
   font-family: 'Manrope', 'Josefin Sans', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 :root {
@@ -22,14 +29,8 @@ body {
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
+    box-sizing: border-box;
   }
-}
-
-/* Custom Scrollbar */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
