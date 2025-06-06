@@ -9,6 +9,7 @@ const services = [
     { title: 'Cyber Security', slug: 'cyber-security', img: '/services/cyber-security.jpg' },
     { title: 'Machine Learning', slug: 'machine-learning', img: '/services/machine-learning.jpg' },
     { title: 'Graphic Design', slug: 'graphic-design', img: '/services/graphic-design.jpg' },
+    { title: 'Web Devlopment', slug: 'web-devlopment', img: '/services/graphic-design.jpg' },
 ];
 
 export default function Page() {
