@@ -63,7 +63,7 @@ export default function HomePage() {
   return (
     <main className="space-y-24">
       {/* Hero Section */}
-      <section className="border-b">
+      <section className="border-b mb-10 md:mb-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-10 gap-10">
           <div className="md:w-1/2 flex justify-center">
             <Image
@@ -96,29 +96,29 @@ export default function HomePage() {
       </section>
 
       {/* Intro Section */}
-      <section className="container mx-auto text-center px-5 md:w-1/2">
-        <h2 className="text-3xl font-extrabold uppercase">Our Leading Services</h2>
-        <p className="text-gray-300">
+      <section className="container mx-auto text-center px-5 md:w-1/2 ">
+        <h2 className="text-3xl md:text-4xl font-extrabold uppercase pb-5">Our Leading Services</h2>
+        <p className="text-gray-300 text-lg">
           Our unmatched expertise in technology and innovation ensures strategic, secure, and scalable solutions for your business success.
         </p>
       </section>
 
       {/* Service Blocks */}
-      <div className="border-b pb-14 flex flex-col gap-10">
+      <div className="border-b pb-14 flex flex-col gap-10 mb-10 md:mb-20">
       {section.map((item, index) => (
         <ServiceBlock key={index} {...item} />
       ))}
       </div>
 
       {/* Contact Section */}
-      <section className="xl:container mx-auto p-5 my-10">
+      <section className="xl:container mx-auto p-5 mb-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
           <div className="w-full lg:w-1/3 text-center space-y-5">
             <h2 className="text-5xl font-bold text-blue-100 text-shadow-md text-shadow-lime-300 uppercase">FEEL FREE TO REACH US</h2>
             <p className="text-gray-400 text-2xl">
               Have questions, suggestions, or just want to say hello? We&apos;d love to hear from you!
             </p>
-            <Image src="/social-reach.png" alt="Contact" width={200} height={200} className="mx-auto" />
+            <Image src="/social-reach.png" alt="Contact" width={200} height={200} className="mx-auto w-[150px] md:w-[200px] aspect-square" />
           </div>
           <form className="w-full lg:w-1/2 xl:w-1/3 bg-gray-800 rounded-2xl p-6 space-y-5">
             <Input label="Name" type="text" />
