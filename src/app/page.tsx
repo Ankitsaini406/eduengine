@@ -174,7 +174,7 @@ function ServiceBlock({
       className={`container mx-auto flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"
         } items-center justify-between p-5 gap-10`}
     >
-      <div className="md:w-1/2 flex justify-center">
+      <div className="w-full md:w-1/2 flex justify-center">
         <Image
           className="bg-gray-800 p-0 rounded-xl w-full max-w-md"
           src={imgSrc}
