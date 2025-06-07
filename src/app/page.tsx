@@ -176,7 +176,7 @@ function ServiceBlock({
     >
       <div className="md:w-1/2 flex justify-center">
         <Image
-          className="bg-gray-800 p-10 rounded-xl w-full max-w-md"
+          className="bg-gray-800 p-0 rounded-xl w-full max-w-md"
           src={imgSrc}
           alt={highlight}
           width={400}

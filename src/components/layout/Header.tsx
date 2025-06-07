@@ -11,6 +11,7 @@ export default function Header() {
     const navItems = [
         { title: "Services", link: "/services" },
         { title: "Contact Us", link: "/contact-us" },
+        { title: "About Us", link: "/about-us" },
         { title: "Careers", link: "/careers" },
     ];
 
