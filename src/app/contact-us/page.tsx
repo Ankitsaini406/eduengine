@@ -26,22 +26,30 @@ export default function ContactPage() {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const { fullName, contact, email, message } = formData;
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault()
+        setStatus('loading')
 
-        if (!fullName || !contact || !email || !message) {
-            setStatus("error");
-            return;
+        try {
+            const res = await fetch('/api', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            })
+
+            if (res.ok) {
+                setStatus('success')
+                setFormData({ fullName: '', email: '', contact: '', message: '' })
+            } else {
+                setStatus('error')
+            }
+        } catch (error) {
+            console.error('Error:', error)
+            setStatus('error')
         }
 
-        setStatus("loading");
-        setTimeout(() => {
-            setStatus("success");
-            setFormData({ fullName: "", contact: "", email: "", message: "" });
-            setTimeout(() => setStatus("idle"), 4000);
-        }, 1000);
-    };
+        setTimeout(() => setStatus('idle'), 5000)
+    }
 
     return (
         <>
@@ -124,7 +132,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Contact Info */}
-                <div className="w-full md:w-1/3 flex flex-col justify-center pl-4">
+                <div className="w-full flex flex-col justify-center pl-4">
                     <div className="text-lg space-y-8 mt-10 md:mt-20 text-white">
                         <div>
                             <p className="font-semibold text-yellow-300">Phone</p>
