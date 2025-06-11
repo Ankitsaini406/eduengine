@@ -20,7 +20,7 @@ export default function TextFade({
     }, [interval, titles.length]);
 
     return (
-        <div className="relative h-[40px] w-full overflow-hidden text-xl md:text-3xl font-bold">
+        <div className="relative h-[40px] md:h-[50px] w-full overflow-hidden text-2xl md:text-5xl font-bold">
             <AnimatePresence mode="wait">
                 <motion.div
                     key={titles[index]}

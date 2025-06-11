@@ -30,7 +30,8 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-foreground text-background py-10 px-6 lg:px-12 rounded-t-4xl">
+        <footer className="relative bg-foreground text-background py-10 px-6 lg:px-12 rounded-t-4xl overflow-hidden">
+            <div className="absolute inset-y-0 left-0 w-1/2 pointer-events-none z-0 bg-gradient-to-r from-black/20 to-transparent" />
             <div className="max-w-7xl mx-auto flex flex-col gap-12">
                 {/* Top: Social + Newsletter */}
                 <div className="flex flex-col md:flex-row justify-between gap-10">
@@ -69,7 +70,7 @@ export default function Footer() {
                     {/* Services Accordion */}
                     <div className="w-full md:w-fit border-b pb-2.5 md:py-0 md:border-b-0">
                         <div className="cursor-pointer md:cursor-default" onClick={() => toggleAccordion("services")}>
-                            <h5 className="text-xl font-semibold flex justify-between items-center">
+                            <h5 className="text-xl md:text-2xl font-semibold flex justify-between items-center">
                                 Services
                                 <span className="md:hidden">{openSection === "services" ? "−" : "+"}</span>
                             </h5>
@@ -89,7 +90,7 @@ export default function Footer() {
                                             <li key={name} className="group relative overflow-hidden">
                                                 <Link href={href} className="relative z-10 inline-block">
                                                     {name}
-                                                    <span className="absolute left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                                                    <span className="absolute -ml-2 group-hover:ml-0 left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                                                 </Link>
                                             </li>
                                         ))}
@@ -102,7 +103,7 @@ export default function Footer() {
                                 <li key={name} className="group relative overflow-hidden">
                                     <Link href={href} className="relative z-10 inline-block">
                                         {name}
-                                        <span className="absolute left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                                        <span className="absolute -ml-2 group-hover:ml-0 left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                                     </Link>
                                 </li>
                             ))}
@@ -112,7 +113,7 @@ export default function Footer() {
                     {/* About Accordion */}
                     <div className="w-full md:w-fit border-b pb-2.5 md:py-0 md:border-b-0">
                         <div className="cursor-pointer md:cursor-default" onClick={() => toggleAccordion("about")}>
-                            <h5 className="text-xl font-semibold flex justify-between items-center">
+                            <h5 className="text-xl md:text-2xl font-semibold flex justify-between items-center">
                                 About
                                 <span className="md:hidden">{openSection === "about" ? "−" : "+"}</span>
                             </h5>

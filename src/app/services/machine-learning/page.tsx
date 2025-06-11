@@ -51,7 +51,7 @@ export default function Mi() {
     return (
         <div className="py-8 px-4">
             <main className="max-w-screen-xl mx-auto text-left">
-                <h1 className="text-5xl font-bold text-blue-100 text-shadow-blue mb-6 pt-16">
+                <h1 className="text-5xl font-bold mb-6 pt-16">
                     GET Your Custom Machine Learning Services
                 </h1>
 
@@ -126,7 +126,7 @@ export default function Mi() {
                         width={400}
                         src="/services/ml/ml-last.jpg"
                         alt="Design Portfolio"
-                        className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-xl shadow-gray-500"
+                        className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-md shadow-gray-500"
                     />
                     <div>
                         <h4 className="text-3xl md:text-5xl font-bold pb-5">Your Success Our Vision</h4>

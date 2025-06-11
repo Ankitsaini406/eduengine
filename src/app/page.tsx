@@ -1,3 +1,4 @@
+import ServiceBlock from "@/components/SectionBlocks";
 import TextFade from "@/components/TextFade";
 import Image from "next/image";
 import Link from "next/link";
@@ -63,8 +64,8 @@ export default function HomePage() {
   return (
     <main className="space-y-24">
       {/* Hero Section */}
-      <section className="border-b mb-10 md:mb-20">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-10 gap-10">
+      <section className="mb-10 md:mb-20">
+        <div className="container mx-auto border-b border-foreground/20 flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-10 gap-10">
           <div className="md:w-1/2 flex justify-center">
             <Image
               className="w-full max-w-xs md:max-w-md lg:max-w-lg mt-10"
@@ -75,8 +76,8 @@ export default function HomePage() {
             />
           </div>
           <div className="md:w-1/2 md:text-left space-y-6 flex flex-col items-center">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight text-center">
-              WE ARE AN EXPERT DIGIT SOLUTION AGENCY
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center uppercase">
+              We are an expert digital solution agency
             </h1>
             <TextFade titles={[
               "WEB DEVELOPMENT",
@@ -97,14 +98,14 @@ export default function HomePage() {
 
       {/* Intro Section */}
       <section className="container mx-auto text-center px-5 md:w-1/2 ">
-        <h2 className="text-3xl md:text-4xl font-extrabold uppercase pb-5">Our Leading Services</h2>
+        <h2 className="text-2xl md:text-5xl font-extrabold uppercase pb-5">Our Leading Services</h2>
         <p className="text-gray-300 text-lg">
           Our unmatched expertise in technology and innovation ensures strategic, secure, and scalable solutions for your business success.
         </p>
       </section>
 
       {/* Service Blocks */}
-      <div className="border-b pb-14 flex flex-col gap-10 mb-10 md:mb-20">
+      <div className="container mx-auto border-b border-foreground/20 pb-14 flex flex-col gap-10 mb-10 md:mb-20">
       {section.map((item, index) => (
         <ServiceBlock key={index} {...item} />
       ))}
@@ -114,13 +115,13 @@ export default function HomePage() {
       <section className="xl:container mx-auto p-5 mb-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
           <div className="w-full lg:w-1/3 text-center space-y-5">
-            <h2 className="text-5xl font-bold text-blue-100 text-shadow-md text-shadow-lime-300 uppercase">FEEL FREE TO REACH US</h2>
+            <h2 className="text-5xl font-bold uppercase">FEEL FREE TO REACH US</h2>
             <p className="text-gray-400 text-2xl">
-              Have questions, suggestions, or just want to say hello? We&apos;d love to hear from you!
+              Have questions, suggestions, or just want to say hello? We&apos;d love to hear from you! Reach out anytime and we&apos;ll get back to you as soon as possible.
             </p>
-            <Image src="/social-reach.png" alt="Contact" width={200} height={200} className="mx-auto w-[150px] md:w-[200px] aspect-square" />
+            <Image src="/social-reach.png" alt="Contact" width={200} height={200} className="mx-auto w-[150px] aspect-square" />
           </div>
-          <form className="w-full lg:w-1/2 xl:w-1/3 bg-gray-800 rounded-2xl p-6 space-y-5">
+          <form className="w-full lg:w-1/2 xl:w-1/3 bg-neutral-800 rounded-2xl p-6 space-y-5">
             <Input label="Name" type="text" />
             <Input label="Email" type="email" />
             <Input label="Contact" type="tel" />
@@ -132,7 +133,7 @@ export default function HomePage() {
             </div>
             <button
               type="submit"
-              className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg text-white font-bold w-full"
+              className="bg-red-600 hover:bg-red-700 px-8 py-2 rounded-md text-white font-bold "
             >
               SUBMIT
             </button>
@@ -140,66 +141,6 @@ export default function HomePage() {
         </div>
       </section>
     </main>
-  );
-}
-
-interface ServiceBlockProps {
-  title: string;
-  description: string;
-  imgSrc: string;
-  reverse: boolean;
-  highlight: string;
-  color: string;
-  link: string;
-}
-
-function ServiceBlock({
-  title,
-  description,
-  imgSrc,
-  reverse,
-  highlight,
-  color,
-  link,
-}: ServiceBlockProps) {
-  const [before, after] = title.split(highlight);
-  const colorMap: Record<string, string> = {
-    "lime-300": "text-lime-300",
-    "lime-400": "text-lime-400",
-    "amber-300": "text-amber-300",
-  };
-
-  return (
-    <section
-      className={`container mx-auto flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"
-        } items-center justify-between p-5 gap-10`}
-    >
-      <div className="w-full md:w-1/2 flex justify-center">
-        <Image
-          className="bg-gray-800 p-0 rounded-xl w-full max-w-md"
-          src={imgSrc}
-          alt={highlight}
-          width={400}
-          height={300}
-        />
-      </div>
-      <div className="md:w-1/2 text-center space-y-4">
-        <h3 className="text-3xl font-semibold">
-          {before}
-          <span className={`${colorMap[color]}`}>{highlight}</span>
-          {after}
-        </h3>
-        <p className="text-gray-300 text-base leading-relaxed">
-          {description}
-        </p>
-        <Link
-          href={link}
-          className="text-blue-500 hover:text-blue-600 font-bold hover:underline inline-flex items-center"
-        >
-          MORE <span className="ml-1">↗</span>
-        </Link>
-      </div>
-    </section>
   );
 }
 

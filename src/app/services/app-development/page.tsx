@@ -96,7 +96,7 @@ const AppDevelopment = () => {
 
             {/* Process Section */}
             <div className="text-center max-w-7xl mx-auto">
-                <h2 className="text-4xl font-bold mb-12">Our APP Development Process</h2>
+                <h2 className="text-4xl font-bold mb-12">Our App Development Process</h2>
 
                 <div className="flex flex-wrap justify-center gap-10">
                     {steps.map((step, index) => (
@@ -104,13 +104,13 @@ const AppDevelopment = () => {
                             key={index}
                             className="w-[280px] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:-translate-y-2 transition-all duration-300 shadow-md hover:shadow-xl"
                         >
-                            <div className="w-fit h-auto mx-auto mb-4 rounded-[20%] bg-[#222] flex items-center justify-center">
+                            <div className="w-fit h-[210px] mx-auto mb-4 rounded-[20%] bg-[#222] flex items-center justify-center">
                                 <Image
                                     width={500}
                                     height={500}
                                     src={step.img}
                                     alt={step.title}
-                                    className="object-contain w-full h-full" />
+                                    className="object-cover w-full h-full" />
                             </div>
                             <div className="p-4">
                             <h3 className="text-xl font-semibold text-white glowing-text mb-2">{step.title}</h3>
