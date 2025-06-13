@@ -8,8 +8,8 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 const serviceLinks = [
-    { name: "Web Development", href: "/services/web-devlopmnet" },
-    { name: "App Development", href: "/services/app-devlopmnet" },
+    { name: "Web Development", href: "/services/web-developmnet" },
+    { name: "App Development", href: "/services/app-developmnet" },
     { name: "Graphic Design", href: "/services/graphic-design" },
     { name: "Cloud Computing", href: "/services/cloud-computing" },
     { name: "Machine Learning", href: "/services/machine-learning" },
