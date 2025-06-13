@@ -1,5 +1,6 @@
 "use client";
 import FaqSection from "@/components/FrequentyQuestion";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
@@ -50,6 +51,16 @@ export default function Mi() {
 
     return (
         <div className="py-8 px-4">
+
+            <Head>
+    <title>Machine Learning Services | Eduengine</title>
+    <meta
+        name="description"
+        content="Leverage Eduengine’s Machine Learning expertise to build intelligent systems. We offer data modeling, predictive analytics, NLP, and AI integration for smarter business decisions."
+    />
+    <link rel="canonical" href="https://eduengine.in/services/machine-learning" />
+</Head>
+
             <main className="max-w-screen-xl mx-auto text-left">
                 <h1 className="text-5xl font-bold mb-6 pt-16">
                     Get Your Custom Machine Learning Services

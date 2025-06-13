@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ChildLayout from "./Childlayout";
-// import DevelopmentAlert from "@/components/DevelopmentAlert";
 
 export const metadata: Metadata = {
   title: "Eduengine",
@@ -21,7 +20,6 @@ export default function RootLayout({
         <meta name="google-site-verification" content="IB0t8R-5FedJG83tCKBWn29rmG0xIfXfnYtnJKGP_2c" />
       </head>
       <body className={`antialiased bg-background text-foreground`}>
-        {/* <DevelopmentAlert /> */}
         <ChildLayout>
           {children}
         </ChildLayout>

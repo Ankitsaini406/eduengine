@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const services = [
     { title: 'App Development', slug: 'app-development', img: '/app.png' },
@@ -17,6 +18,16 @@ export default function Page() {
 
     return (
         <div className="min-h-screen px-4 py-16">
+
+            <Head>
+                <title>Web Development | Eduengine</title>
+                <meta
+                    name="description"
+                    content="Build fast, responsive, and scalable websites with Eduengine. We specialize in custom web development, frontend/backend engineering, CMS integration, and performance optimization."
+                />
+                <link rel="canonical" href="https://eduengine.in/services/web-development" />
+            </Head>
+
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-4xl font-bold text-white mb-8">Services</h2>
                 <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

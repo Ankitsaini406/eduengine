@@ -57,7 +57,7 @@ export default function Design() {
     return (
         <div className="py-8 px-4">
             <Head>
-                <title>Graphic Design Services | Eduengine</title>
+                <title>Graphic Design | Eduengine</title>
                 <meta
                     name="description"
                     content="Bring your brand to life with Eduengine's creative graphic design services. From logos and branding to social media and print design, we craft visuals that captivate."
