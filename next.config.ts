@@ -5,6 +5,10 @@ dotenv.config();
 
 const nextConfig: NextConfig = {
   env: {
+
+    HOST_URL: process.env.NEXT_APP_HOST_URL,
+    LOCAL_URL: process.env.NEXT_APP_LOCAL_URL,
+
     // google key
     GOOGLE_PROJECT_ID: process.env.NEXT_APP_GOOGLE_PROJECT_ID,
     GOOGLE_PRIVATE_KEY_ID: process.env.NEXT_APP_GOOGLE_PRIVATE_KEY_ID,

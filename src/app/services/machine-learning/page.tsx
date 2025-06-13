@@ -41,18 +41,18 @@ export default function Mi() {
         { title: "Data Collection", img: "/services/ml/data-collection.png" },
         { title: "Predictive Analytics", img: "/services/ml/analysis.png" },
         { title: "Computer Vision", img: "/services/ml/opportunity.png" },
-        { title: "Recommendation  Systems", img: "/services/ml/setting.png" },
+        { title: "Recommendation Systems", img: "/services/ml/setting.png" },
         { title: "Anomaly Detection", img: "/services/ml/detective.png" },
         { title: "Model Deployment", img: "/services/ml/project-launch.png" },
         { title: "Model Monitoring", img: "/services/ml/monitoring.png" },
-        { title: "Machine Learning  Consulting", img: "/services/ml/conversation.png" },
+        { title: "Machine Learning Consulting", img: "/services/ml/conversation.png" },
     ];
 
     return (
         <div className="py-8 px-4">
             <main className="max-w-screen-xl mx-auto text-left">
                 <h1 className="text-5xl font-bold mb-6 pt-16">
-                    GET Your Custom Machine Learning Services
+                    Get Your Custom Machine Learning Services
                 </h1>
 
                 <p className="text-white text-xl md:text-2xl mb-10 max-w-3xl">
@@ -65,7 +65,7 @@ export default function Mi() {
                         <Image src="/services/ml/custom.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Custom Model</h3>
-                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">we design and train machine learning models specifically for your business goals, ensuring accurate and efficient solutions.</h5>
+                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We design and train machine learning models specifically for your business goals, ensuring accurate and efficient solutions.</h5>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
@@ -82,7 +82,7 @@ export default function Mi() {
                             <Image src="/services/ml/paper.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Natural Language Understanding</h3>
-                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Develop systems that can read, interpret, and respond to human language across different platform and industries.</h5>
+                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Develop systems that can read, interpret, and respond to human language across different platforms and industries.</h5>
                             </div>
                         </div>
                     </div>
@@ -129,8 +129,8 @@ export default function Mi() {
                         className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-md shadow-gray-500"
                     />
                     <div>
-                        <h4 className="text-3xl md:text-5xl font-bold pb-5">Your Success Our Vision</h4>
-                        <h6 className="text-base md:text-xl lg:text-2xl opacity-60">We believe great design is more than just visuals - it&apos;s a tool to drive your success. Our vision is to turn your goals into stunning creative solutions that connect, inspire, and perform. When you grow, we grow with you.</h6>
+                        <h4 className="text-3xl md:text-5xl font-bold pb-5">Your Success, Our Vision</h4>
+                        <h6 className="text-base md:text-xl lg:text-2xl opacity-60">We believe great design is more than just visuals — it&apos;s a tool to drive your success. Our vision is to turn your goals into stunning creative solutions that connect, inspire, and perform. When you grow, we grow with you.</h6>
                     </div>
                 </div>
             </main>

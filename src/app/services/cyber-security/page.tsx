@@ -40,7 +40,7 @@ const Cybersecurity = () => {
         {
             title: "Incident Response & Digital Forensics",
             description:
-                "Our specialized team quickly identifies and neutralizes security breaches while conducting indepth forensic  analysis to trace their origins. We help you recover swiftly and strengthen your defenses—ensuring your operations stay secure and uninterrupted.",
+                "Our specialized team quickly identifies and neutralizes security breaches while conducting in-depth forensic analysis to trace their origins. We help you recover swiftly and strengthen your defenses—ensuring your operations stay secure and uninterrupted.",
             img: "/services/cyber-security/user.png",
         },
         {
@@ -62,7 +62,7 @@ const Cybersecurity = () => {
             img: "/services/cyber-security/network.png",
         },
         {
-            title: "Cloud Security Solution",
+            title: "Cloud Security Solutions",
             description:
                 "Protect your infrastructure from unauthorized access and data breaches with cutting-edge security solutions. Stay ahead of evolving threats and ensure network integrity with powerful firewalls and proactive defense strategies.",
             img: "/services/cyber-security/cloud.png",
@@ -76,13 +76,13 @@ const Cybersecurity = () => {
         {
             title: "Backup & Disaster Recovery",
             description:
-                "Protect your critical data and recover quickly from any disruption with our automated backup and disaster recovery services. We provide secure, encrypted backups with fast restoration to keep your operations running no matter what",
+                "Protect your critical data and recover quickly from any disruption with our automated backup and disaster recovery services. We provide secure, encrypted backups with fast restoration to keep your operations running no matter what.",
             img: "/services/cloud/cloud-sync.png",
         },
         {
             title: "Threat Intelligence & Monitoring",
             description:
-                "Stay ahead of cyber threats with continuous monitoring and actionable threat intelligence. Our platform aggregates global threat data and uses AI-driven analytics to detect anomalies and prevent attacks before they impact your business",
+                "Stay ahead of cyber threats with continuous monitoring and actionable threat intelligence. Our platform aggregates global threat data and uses AI-driven analytics to detect anomalies and prevent attacks before they impact your business.",
             img: "/services/cyber-security/performance.png",
         },
     ];

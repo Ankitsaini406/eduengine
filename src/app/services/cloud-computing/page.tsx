@@ -40,19 +40,19 @@ export default function Page() {
         {
             title: "Infrastructure as a Service (IaaS)",
             description:
-                "Provides virtualized computing resources over theinternet, such as servers, storage, and networking.",
+                "Provides virtualized computing resources over the internet, such as servers, storage, and networking.",
             img: "/services/cloud/iaas.png",
         },
         {
             title: "Platform as a Service (PaaS)",
             description:
-                "PaaS delivers a cloud-based environment for developers to build, deploy, and manage applications. It includes everything from development tools, middleware, operating system.",
+                "PaaS delivers a cloud-based environment for developers to build, deploy, and manage applications. It includes everything from development tools, middleware, to the operating system.",
             img: "/services/cloud/paas.png",
         },
         {
             title: "Software as a Service (SaaS)",
             description:
-                "SaaS delivers software applications over the internet on a subscription basis. With SaaS, users don’t need to install or manage software on their own devices. The cloud provider hosts, manages, and updates the software, ensuring users always have access to the latest features and security patches",
+                "SaaS delivers software applications over the internet on a subscription basis. With SaaS, users don’t need to install or manage software on their own devices. The cloud provider hosts, manages, and updates the software, ensuring that users always have access to the latest features and security patches.",
             img: "/services/cloud/saas.png",
         },
         {
@@ -68,7 +68,7 @@ export default function Page() {
             img: "/services/cloud/data-recovery.png",
         },
         {
-            title: "Function as a Service/ Serverless Computing",
+            title: "Function as a Service / Serverless Computing",
             description:
                 "Allows developers to run code in response to events without managing servers, scaling automatically as needed.",
             img: "/services/cloud/innovation.png",
@@ -93,12 +93,11 @@ export default function Page() {
             <section className="flex flex-col md:flex-row justify-around items-center pt-15 md:pt-0 px-8 bg-black text-white relative">
                 <div className="w-full md:w-[65%] lg:w-[60%] xl:w-[40%]">
                     <h1 className="text-2xl lg:text-4xl xl:text-5xl bg-black font-bold leading-snug mb-4">
-                        Empowering Business Growth through Secure<br />
+                        Empowering Business Growth Through Secure<br />
                         <span className="text-[#00f0ff]">Cloud Computing</span>
                     </h1>
                     <p className="text-sm lg:text-lg mb-4 opacity-70">
-                        Ensure sustainable growth and operational resilience in an ever
-                        evolving digital landscape powered by the cloud
+                        Ensure sustainable growth and operational resilience in an ever-evolving digital landscape powered by the cloud.
                     </p>
                 </div>
 

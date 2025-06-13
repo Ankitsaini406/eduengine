@@ -42,7 +42,7 @@ const designdata = [
 
 export default function Design() {
     const serviceData = [
-        { title: "App/Web U/X Design", img: "/services/graphic-design/business-cards.png" },
+        { title: "App/Web UI/UX Design", img: "/services/graphic-design/business-cards.png" },
         { title: "3D Modelling", img: "/services/graphic-design/3d-model.png" },
         { title: "Typography", img: "/services/graphic-design/edit-text.png" },
         { title: "Illustration", img: "/services/graphic-design/pen-tool.png" },
@@ -57,11 +57,11 @@ export default function Design() {
         <div className="py-8 px-4">
             <main className="max-w-screen-xl mx-auto text-left">
                 <h1 className="text-5xl font-bold mb-6 pt-16">
-                    GET YOUR BEST DESIGN
+                    Get Your Best Design 
                 </h1>
 
                 <p className="text-white text-xl md:text-2xl mb-10 max-w-3xl">
-                    Need designs that stand out and speak your brand? From logos and
+                    Need designs that stand out and represent your brand? From logos and
                     flyers to social media posts and full brand kits — we craft visuals
                     that match your vision with style and precision.
                 </p>
@@ -72,7 +72,7 @@ export default function Design() {
                         <Image src="/services/graphic-design/photo.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Photography</h3>
-                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">we offer professional photography services to give your brand the perfect visual edge - from product shoots to personal portraits.</h5>
+                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We offer professional photography services to give your brand the perfect visual edge - from product shoots to personal portraits.</h5>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
@@ -81,14 +81,14 @@ export default function Design() {
                             <Image src="/services/graphic-design/graphic-wall.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Graphic Design</h3>
-                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Along with care services, we also offer high-quality graphic design - from branding and social media posts to promotional materials.</h5>
+                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Along with core services, we also offer high-quality graphic design — from branding and social media posts to promotional materials.</h5>
                             </div>
                         </div>
                         <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
                             <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
                             <Image src="/services/app/app3.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
-                                <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">UI UX Design</h3>
+                                <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">UI/UX Design</h3>
                                 <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Beyond UI/UX, we bring your brand to life with custom graphic design for logos, flyers, and more.</h5>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ export default function Design() {
                         <Image src="/services/graphic-design/graphic-brading.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Branding</h3>
-                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We don&apos;t just design interfaces - we also build brands. Let us craft your visual identity from the ground up.</h5>
+                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We don&apos;t just design interfaces — we also build brands. Let us craft your visual identity from the ground up.</h5>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Design() {
                         className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-md shadow-gray-500"
                     />
                     <div>
-                        <h4 className="text-3xl md:text-5xl font-bold pb-5">Your Success Our Vision</h4>
+                        <h4 className="text-3xl md:text-5xl font-bold pb-5">Your Success, Our Vision</h4>
                         <h6 className="text-base md:text-xl lg:text-2xl opacity-60">We believe great design is more than just visuals - it&apos;s a tool to drive your success. Our vision is to turn your goals into stunning creative solutions that connect, inspire, and perform. When you grow, we grow with you.</h6>
                     </div>
                 </div>

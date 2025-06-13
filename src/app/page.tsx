@@ -11,7 +11,7 @@ const section = [
     reverse: true,
     highlight: "Web Services",
     color: "amber-300",
-    link: '/services/web-devlopment'
+    link: '/services/web-development'
   },
   {
     title: "Creative Graphic Design Services to Elevate Your Brand",
@@ -29,7 +29,7 @@ const section = [
     reverse: true,
     highlight: "App Development",
     color: "amber-300",
-    link: '/services/app-devlopment',
+    link: '/services/app-development',
   },
   {
     title: "Cloud Computing Solution for Seamless Business Growth",

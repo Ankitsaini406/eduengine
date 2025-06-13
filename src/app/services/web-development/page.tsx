@@ -31,14 +31,14 @@ const FAQ_LIST = [
 
 const CARD_DATA = [
     {
-        title: "User Centric UI/UX Approach",
+        title: "User-Centric UI/UX Approach",
         description:
             "Intuitive, visually appealing designs focused on usability, accessibility, and seamless user experience.",
         image: "/services/graphic-design/graphic-success.jpg",
         bgColor: "bg-blue-300",
     },
     {
-        title: "Fast Loading & Optimized Design",
+        title: "Fast-Loading & Optimized Design",
         description:
             "Performance-focused builds with fast load times and seamless experiences across all devices.",
         image: "/services/web/seo.jpg",
