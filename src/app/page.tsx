@@ -60,18 +60,19 @@ const section = [
   },
 ];
 
-const fetchImageUrl = async () => {
-    const apiPoint = process.env.NODE_ENV === "development" ? 'http://localhost:3002/' : process.env.HOST_URL;
-    const response = await fetch(`${apiPoint}api/image-url`,
-        // { cache: "no-store" }
-    ); // No caching
-    const data = await response.json();
-    return data.imageUrl;
-};
+// const fetchImageUrl = async () => {
+//     const apiPoint = process.env.NODE_ENV === "development" ? 'http://localhost:3002/' : 'https://eduengine.in/';
+//     const response = await fetch(`${apiPoint}api/image-url`,
+//         // { cache: "no-store" }
+//     ); // No caching
+//     const data = await response.json();
+//     return data.imageUrl;
+// };
 
 export default async function Home() {
 
-      const imageUrl = await fetchImageUrl();
+      // const imageUrl = await fetchImageUrl();
+
 
   return (
     <main className="space-y-24">
@@ -81,7 +82,7 @@ export default async function Home() {
           <div className="md:w-1/2 flex justify-center">
             <Image
               className="w-full max-w-xs md:max-w-md lg:max-w-lg mt-10"
-              src={imageUrl}
+              src='/hero.webp'
               alt="Development"
               width={500}
               height={500}

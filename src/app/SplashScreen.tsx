@@ -4,23 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 // import Image from 'next/image';
 
-const splashVariants = {
-    initial: { opacity: 1 },
-    exit: {
-        opacity: 0,
-        y: -50,
-        transition: { duration: 0.4, ease: 'easeInOut' },
-    },
-};
 
-const nameVariants = {
-    initial: { opacity: 0, y: 10 },
-    animate: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.4, ease: 'easeOut' },
-    },
-};
 
 // const logoVariants = {
 //     initial: { scale: 0.8, opacity: 0 },
@@ -48,7 +32,14 @@ export default function SplashScreen() {
         <AnimatePresence initial={false}>
             {isVisible && (
                 <motion.div
-                    variants={splashVariants}
+                    variants={{
+                        initial: { opacity: 1 },
+                        exit: {
+                            opacity: 0,
+                            y: -50,
+                            transition: { duration: 0.4, ease: 'easeInOut' },
+                        },
+                    }}
                     initial="initial"
                     animate="initial"
                     exit="exit"
@@ -56,7 +47,14 @@ export default function SplashScreen() {
                     style={{ willChange: 'opacity, transform' }}
                 >
                     {/* <motion.div
-                        variants={logoVariants}
+                        variants={{
+                            initial: { scale: 0.8, opacity: 0 },
+                            animate: {
+                                scale: 1,
+                                opacity: 1,
+                                transition: { duration: 0.5, ease: 'easeOut' },
+                            }
+                        }}
                         initial="initial"
                         animate="animate"
                         className="mb-4"
@@ -71,7 +69,14 @@ export default function SplashScreen() {
                         />
                     </motion.div> */}
                     <motion.h1
-                        variants={nameVariants}
+                        variants={{
+                            initial: { opacity: 0, y: 10 },
+                            animate: {
+                                opacity: 1,
+                                y: 0,
+                                transition: { duration: 0.4, ease: 'easeOut' },
+                            },
+                        }}
                         initial="initial"
                         animate="animate"
                         className="text-2xl font-semibold tracking-wide"
