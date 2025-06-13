@@ -69,14 +69,14 @@ export default function HomePage() {
           <div className="md:w-1/2 flex justify-center">
             <Image
               className="w-full max-w-xs md:max-w-md lg:max-w-lg mt-10"
-              src="/hero.png"
+              src="/hero.webp"
               alt="Development"
               width={500}
               height={500}
             />
           </div>
           <div className="md:w-1/2 md:text-left space-y-6 flex flex-col items-center">
-            <h1 className="text-3xl md:text-4xl lg:text-6xl leading-17 font-bold text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl leading-9 md:leading-12 lg:leading-17 font-bold text-center">
               We provide smart digital solutions for your business.
             </h1>
             <TextFade titles={[

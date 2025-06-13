@@ -8,8 +8,8 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 const serviceLinks = [
-    { name: "Web Development", href: "/services/web-developmnet" },
-    { name: "App Development", href: "/services/app-developmnet" },
+    { name: "Web Development", href: "/services/web-development" },
+    { name: "App Development", href: "/services/app-development" },
     { name: "Graphic Design", href: "/services/graphic-design" },
     { name: "Cloud Computing", href: "/services/cloud-computing" },
     { name: "Machine Learning", href: "/services/machine-learning" },
@@ -88,7 +88,7 @@ export default function Footer() {
                                     <ul className="space-y-2 mt-3">
                                         {serviceLinks.map(({ name, href }) => (
                                             <li key={name} className="group relative overflow-hidden">
-                                                <Link href={href} className="relative z-10 inline-block">
+                                                <Link href={href} target="_blank" className="relative z-10 inline-block">
                                                     {name}
                                                     <span className="absolute -ml-2 group-hover:ml-0 left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                                                 </Link>
@@ -101,7 +101,7 @@ export default function Footer() {
                         <ul className="hidden md:block md:space-y-2 mt-3">
                             {serviceLinks.map(({ name, href }) => (
                                 <li key={name} className="group relative overflow-hidden">
-                                    <Link href={href} className="relative z-10 inline-block">
+                                    <Link href={href} target="_blank" className="relative z-10 inline-block">
                                         {name}
                                         <span className="absolute -ml-2 group-hover:ml-0 left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                                     </Link>
@@ -131,7 +131,7 @@ export default function Footer() {
                                     <ul className="space-y-2 mt-3">
                                         {aboutLinks.map(({ name, href }) => (
                                             <li key={name} className="group relative overflow-hidden">
-                                                <Link href={href} className="relative z-10 inline-block">
+                                                <Link href={href} target="_blank" className="relative z-10 inline-block">
                                                     {name}
                                                     <span className="absolute left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                                                 </Link>
@@ -144,7 +144,7 @@ export default function Footer() {
                         <ul className="hidden md:block space-y-2 mt-3">
                             {aboutLinks.map(({ name, href }) => (
                                 <li key={name} className="group relative overflow-hidden">
-                                    <Link href={href} className="relative z-10 inline-block">
+                                    <Link href={href} target="_blank" className="relative z-10 inline-block">
                                         {name}
                                         <span className="absolute left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                                     </Link>
