@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ChildLayout from "./Childlayout";
+import SplashScreen from "./SplashScreen";
 import GoogleTagManagerAndAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
       <GoogleTagManagerAndAnalytics />
       </head>
       <body className={`antialiased bg-background text-foreground`}>
+        <SplashScreen />
         <ChildLayout>
           {children}
         </ChildLayout>

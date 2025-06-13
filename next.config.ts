@@ -4,6 +4,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const nextConfig: NextConfig = {
+  images: {
+    domains: ['eduengine.in'],
+  },
   env: {
 
     HOST_URL: process.env.NEXT_APP_HOST_URL,
