@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ChildLayout from "./Childlayout";
+import GoogleTagManagerAndAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Eduengine",
@@ -18,6 +19,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="google-site-verification" content="IB0t8R-5FedJG83tCKBWn29rmG0xIfXfnYtnJKGP_2c" />
+
+      <GoogleTagManagerAndAnalytics />
       </head>
       <body className={`antialiased bg-background text-foreground`}>
         <ChildLayout>
