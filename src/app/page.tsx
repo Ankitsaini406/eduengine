@@ -60,19 +60,18 @@ const section = [
   },
 ];
 
-// const fetchImageUrl = async () => {
-//     const apiPoint = process.env.NODE_ENV === "development" ? 'http://localhost:3002/' : 'https://eduengine.in/';
-//     const response = await fetch(`${apiPoint}api/image-url`,
-//         // { cache: "no-store" }
-//     ); // No caching
-//     const data = await response.json();
-//     return data.imageUrl;
-// };
+const fetchImageUrl = async () => {
+  const apiPoint = process.env.NODE_ENV === "development" ? 'http://localhost:3002/' : 'https://eduengine.in/';
+  const response = await fetch(`${apiPoint}api/image-url`,
+    // { cache: "no-store" }
+  ); // No caching
+  const data = await response.json();
+  return data.imageUrl;
+};
 
 export default async function Home() {
 
-      // const imageUrl = await fetchImageUrl();
-
+  const imageUrl = await fetchImageUrl();
 
   return (
     <main className="space-y-24">
@@ -82,7 +81,7 @@ export default async function Home() {
           <div className="md:w-1/2 flex justify-center">
             <Image
               className="w-full max-w-xs md:max-w-md lg:max-w-lg mt-10"
-              src='/hero.webp'
+              src={imageUrl}
               alt="Development"
               width={500}
               height={500}
@@ -119,9 +118,9 @@ export default async function Home() {
 
       {/* Service Blocks */}
       <div className="container mx-auto border-b border-foreground/20 pb-14 flex flex-col gap-10 mb-10 md:mb-20">
-      {section.map((item, index) => (
-        <ServiceBlock key={index} {...item} />
-      ))}
+        {section.map((item, index) => (
+          <ServiceBlock key={index} {...item} />
+        ))}
       </div>
 
       {/* Contact Section */}
