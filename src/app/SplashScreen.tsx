@@ -31,7 +31,7 @@ const nameVariants = {
 //     },
 // };
 
-export default function SplashScreen(): TSX.Element | null {
+export default function SplashScreen() {
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const [isMounted, setIsMounted] = useState<boolean>(false);
 
