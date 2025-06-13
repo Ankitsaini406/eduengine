@@ -71,7 +71,7 @@ export default function ServiceBlock({
                     href={link}
                     className="relative group z-10 inline-block text-primary hover:text-primary/80 font-bold items-center transition overflow-hidden text-blue-700"
                 >
-                    MORE <span className="ml-1">↗</span>
+                    👉 Explore further <span className="ml-1">↗</span>
                     <span className="absolute -ml-2 group-hover:ml-0 left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                 </Link>
             </div>

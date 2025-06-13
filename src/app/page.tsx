@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const section = [
   {
-    title: "Professional Web Services to Build Your Online Presence",
-    description: "Unlock the full potential of your business with our expert Web Development services. We design and develop fast, responsive, and user-friendly websites tailored to your brand and business goals. Whether you need a corporate website, e-commerce platform, or a custom web application, our team ensures seamless functionality, modern design, and optimized performance.",
+    title: "🌐 Web Development Services make a Strong Online Presence ",
+    description: "Unleash your business's full eventuality with our professional web development services. We draft presto, responsive, and SEO-friendly websites adapted to your unique business pretensions. Whether you need marketable Websites E-commerce Platforms Custom Web operations Our expert web formulators ensure indefectible functionality, modern design, mobile responsiveness, and high-performance optimization — delivering exceptional user exploits that convert guests into guests. Keywords optimized web development services, responsive websites, SEO-- commerce platforms, custom web operations ",
     imgSrc: "/web.jpg",
     reverse: true,
     highlight: "Web Services",
@@ -14,8 +14,8 @@ const section = [
     link: '/services/web-development'
   },
   {
-    title: "Creative Graphic Design Services to Elevate Your Brand",
-    description: "Bring your ideas to life with our professional graphic design services. We create stunning visuals that communicate your brand message, captivate your audience, and enhance your identity. From logos, brochures, and social media creatives to complete brand identity packages, our expert designers deliver eye-catching designs that blend creativity with strategy — helping your business stand out in today’s competitive world.",
+    title: "🎨 Graphic Design Services Elevate Your Brand Identity ",
+    description: "Stand out in a crowded request with our creative graphic design services. Our talented introducers transform your vision into stunning illustrations that effectively communicate your brand communication and appeal to your target cult. We specialize in Logo Design circulars & flyers Social Media Creatives Complete Brand Identity Packages With a perfect blend of creativity and strategic design, we help businesses strengthen their brand presence and leave a lasting print. Keywords optimized graphic design services, brand identity, totem design, social media creatives ",
     imgSrc: "/graphic-design.png",
     reverse: false,
     highlight: "Graphic Design",
@@ -23,8 +23,8 @@ const section = [
     link: '/services/graphic-design',
   },
   {
-    title: "Custom Mobile App Development to Transform Your Ideas into Reality",
-    description: "We bring your ideas to life with powerful, user-friendly mobile apps. Our App Development services cover everything from concept to launch — including UI/UX design, development, testing, and maintenance. Whether you need an Android app, iOS app, or a cros platform solution, our expert team delivers apps that are fast, secure, and scalable  Partner with us to create innovative mobile experiences that engage users and drive business growth.",
+    title: "📱 Mobile App Development Bring Your Ideas to Life ",
+    description: "Transform your business ideas into significant, user-friendly mobile operations. Our custom app development services cover every stage — from creativity and UI/ UX design to development, testing, and ongoing conservation. We make Android Apps iOS Apps Cross-Platform operations Our apps are secure, scalable, and optimized for maximum performance, furnishing your stoners with indefectible mobile exploits that drive business growth. Keywords optimized mobile app development, Android app development, iOS app-platform apps, UI/ UX design. ",
     imgSrc: "/app.png",
     reverse: true,
     highlight: "App Development",
@@ -32,8 +32,8 @@ const section = [
     link: '/services/app-development',
   },
   {
-    title: "Cloud Computing Solution for Seamless Business Growth",
-    description: "Empower your business with flexible, scalable, and secure cloud computing services. We help you migrate, manage, and optimize your infrastructure on the cloud — ensuring high performance, security, and cost-efficiency. Whether you need cloud hosting, data storage, backup solutions, or full cloud-native app development, our expert team delivers tailored solutions that fit your business needs and drive innovation.",
+    title: "☁️ Cloud Computing Services Scale Your Business Seamlessly ",
+    description: "Maximize effectiveness and strictness with our pall calculating results. We help businesses migrate, manage, and optimize their IT structure on the pall with pall Hosting Data Storage & Provisory Cloud Security pall-Native App Development With our pall moxie, you gain enhanced security, high performance, cost savings, and continued scalability that energy long-term business growth. Keywords optimized pall computing results, pall hosting, data storage, pall migration, pall-native operations ",
     imgSrc: "/cloud.jpg",
     reverse: false,
     highlight: "Cloud Computing",
@@ -41,8 +41,8 @@ const section = [
     link: '/services/cloud-computing',
   },
   {
-    title: "End-To-End Cyber Security Services to Safeguard Your Future",
-    description: "Protect your business from evolving digital threats with our comprehensive Cyber Security Services. We offer end-to-end protection, including risk assessment, threat detection, vulnerability management, data encryption, and incident response. Our team of certified experts works proactively to safeguard your critical information, prevent cyber attacks, and ensure compliance with industry standards Trust us to secure your digital assets, so you can focus on growing your business with confidence.",
+    title: "🔒 Cyber Security Services cover Your Digital means ",
+    description: "Secure your business from growing digital risks with our comprehensive cyber security services. Our pukka experts deliver visionary protection through trouble Detection & Risk Assessment Vulnerability operation Data Encryption & insulation Incident Response & Compliance We guard your critical data, ensure nonsupervisory compliance, and give you peace of mind — allowing you to concentrate on growing your business with confidence. Keywords optimized cyber security services, trouble discovery, trouble operation, data protection, incident response ",
     imgSrc: "/cyber.jpg",
     reverse: true,
     highlight: "Cyber Security",
@@ -50,8 +50,8 @@ const section = [
     link: '/services/cyber-security',
   },
   {
-    title: "Machine Learning Solution to Empower Your Business",
-    description: " Unlock the true potential of your data with our advanced Machine Learning services. We design intelligent systems that can learn, adapt, and make smarter decisions for your business. Our services include custom model development, data analysis, predictive analytics, natural language processing (NLP), computer vision, and AI integration. Whether you want to automate processes, forecast trends, or create personalized customer experiences, we deliver tailored solutions that drive innovation and business growth.",
+    title: "🤖 Machine literacy results Drive Innovation with AI ",
+    description: "Influence the power of machine knowledge and AI to automate processes, cast trends, and deliver substantiated exploits. Our machine knowledge services include Custom Model Development Predictive Analytics Natural Language Processing( NLP) Computer Vision AI Integration We help you turn complex data into practicable perceptivity, empowering your business to make smarter, data-driven opinions. Keywords optimized machine knowledge results, predictive analytics, AI development, NLP, data-driven perceptivity ",
     imgSrc: "/ai.jpg",
     reverse: false,
     highlight: "Machine Learning",
@@ -76,8 +76,8 @@ export default function HomePage() {
             />
           </div>
           <div className="md:w-1/2 md:text-left space-y-6 flex flex-col items-center">
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center uppercase">
-              We are an expert digital solution agency
+            <h1 className="text-3xl md:text-4xl lg:text-6xl leading-17 font-bold text-center">
+              We provide smart digital solutions for your business.
             </h1>
             <TextFade titles={[
               "WEB DEVELOPMENT",
@@ -97,10 +97,10 @@ export default function HomePage() {
       </section>
 
       {/* Intro Section */}
-      <section className="container mx-auto text-center px-5 md:w-1/2 ">
-        <h2 className="text-2xl md:text-5xl font-extrabold uppercase pb-5">Our Leading Services</h2>
+      <section className="container mx-auto text-center px-5 md:w-[900px] ">
+        <h2 className="text-2xl md:text-5xl font-extrabold uppercase pb-5">🚀 Our Leading Digital Services</h2>
         <p className="text-gray-300 text-lg">
-          Our unmatched expertise in technology and innovation ensures strategic, secure, and scalable solutions for your business success.
+          At Eduengine, we combine technology, invention, and moxie to deliver strategic, secure, and scalable results that drive business growth. From startups to enterprises, we help associations thrive in the digital period with our comprehensive range of IT services.
         </p>
       </section>
 
