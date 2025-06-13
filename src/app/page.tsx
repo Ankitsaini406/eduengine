@@ -114,11 +114,11 @@ export default function HomePage() {
       {/* Contact Section */}
       <section className="xl:container mx-auto p-5 mb-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
-          <div className="w-full lg:w-1/3 text-center space-y-5">
+          <div className="w-full lg:w-[45%] text-center space-y-5">
             <h2 className="text-5xl font-bold uppercase">FEEL FREE TO REACH US</h2>
-            <p className="text-gray-400 text-2xl">
+            <h6 className="text-gray-400 text-2xl">
               Have questions, suggestions, or just want to say hello? We&apos;d love to hear from you! Reach out anytime and we&apos;ll get back to you as soon as possible.
-            </p>
+            </h6>
             <Image src="/social-reach.png" alt="Contact" width={200} height={200} className="mx-auto w-[150px] aspect-square" />
           </div>
           <form className="w-full lg:w-1/2 xl:w-1/3 bg-neutral-800 rounded-2xl p-6 space-y-5">

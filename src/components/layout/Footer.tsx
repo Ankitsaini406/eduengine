@@ -49,15 +49,15 @@ export default function Footer() {
 
                     <div className="flex flex-col gap-6 w-full md:max-w-md">
                         <h4 className="text-2xl lg:text-3xl font-semibold">Subscribe to Newsletter</h4>
-                        <div className="flex flex-col sm:flex-row items-center gap-4 relative">
+                        <div className="flex flex-col sm:flex-row items-center relative">
                             <div className="relative w-full">
                                 <input
                                     placeholder="Email Address"
-                                    className="w-full pl-10 pr-4 py-2 rounded-md bg-background text-foreground border border-background/30 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                    className="w-full pl-10 pr-4 py-2 rounded-l-md bg-background text-foreground border border-background/30 focus:outline-none focus:ring-2 focus:ring-red-500"
                                 />
                                 <Image src="/mail.png" alt="email icon" width={24} height={24} className="absolute left-3 top-1/2 transform -translate-y-1/2" />
                             </div>
-                            <button className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-md transition">
+                            <button className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-[8.7px] rounded-r-md transition">
                                 Submit
                             </button>
                         </div>

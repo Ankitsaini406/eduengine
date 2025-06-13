@@ -15,10 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="google-site-verification" content="IB0t8R-5FedJG83tCKBWn29rmG0xIfXfnYtnJKGP_2c" />
+      </head>
       <body className={`antialiased bg-background text-foreground`}>
         {/* <DevelopmentAlert /> */}
         <ChildLayout>
-        {children}
+          {children}
         </ChildLayout>
       </body>
     </html>

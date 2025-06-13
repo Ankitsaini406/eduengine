@@ -19,8 +19,6 @@ export default async function sitemap() {
             url: `${apiPoint}`,
             lastModified: new Date(),
         },
-        // ...tourDetails,
-        // ...blogDetails,
         ...staticPages,
     ]
 }
