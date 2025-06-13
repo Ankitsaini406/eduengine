@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import FaqSection from "@/components/FrequentyQuestion";
+import Head from "next/head";
 
 const faqcloud = [
     {
@@ -89,6 +90,14 @@ export default function Page() {
 
     return (
         <>
+
+            {/* ✅ Canonical Meta Tag */}
+            <Head>
+                <title>Cloud Computing | Edulibrary</title>
+                <meta name="description" content="Explore secure, scalable cloud solutions including IaaS, PaaS, SaaS, and more. Empower your business with Edulibrary's cloud services." />
+                <link rel="canonical" href="https://eduengine.in/services/cloud-computing" />
+            </Head>
+
             {/* Hero Section */}
             <section className="flex flex-col md:flex-row justify-around items-center pt-15 md:pt-0 px-8 bg-black text-white relative">
                 <div className="w-full md:w-[65%] lg:w-[60%] xl:w-[40%]">

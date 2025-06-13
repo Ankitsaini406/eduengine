@@ -1,4 +1,5 @@
 import FaqSection from "@/components/FrequentyQuestion";
+import Head from "next/head";
 import Image from "next/image";
 
 const designdata = [
@@ -55,9 +56,18 @@ export default function Design() {
 
     return (
         <div className="py-8 px-4">
+            <Head>
+                <title>Graphic Design Services | Eduengine</title>
+                <meta
+                    name="description"
+                    content="Bring your brand to life with Eduengine's creative graphic design services. From logos and branding to social media and print design, we craft visuals that captivate."
+                />
+                <link rel="canonical" href="https://eduengine.in/services/graphic-design" />
+            </Head>
+
             <main className="max-w-screen-xl mx-auto text-left">
                 <h1 className="text-5xl font-bold mb-6 pt-16">
-                    Get Your Best Design 
+                    Get Your Best Design
                 </h1>
 
                 <p className="text-white text-xl md:text-2xl mb-10 max-w-3xl">

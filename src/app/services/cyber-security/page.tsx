@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import FaqSection from "@/components/FrequentyQuestion";
+import Head from "next/head";
 
 const cyberdata = [
     {
@@ -89,6 +90,16 @@ const Cybersecurity = () => {
 
     return (
         <section className="pt-15">
+
+            <Head>
+                <title>Cyber Security | Eduengine</title>
+                <meta
+                    name="description"
+                    content="Protect your digital assets with Eduengine's advanced cyber security services. We offer risk assessment, threat detection, firewall setup, and 24/7 monitoring."
+                />
+                <link rel="canonical" href="https://eduengine.in/services/cyber-security" />
+            </Head>
+
             {/* Flex container: text left, image right */}
             <div className="px-6 container mx-auto flex flex-col md:flex-row justify-center items-center mb-16">
                 {/* Text content on left */}
