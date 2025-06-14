@@ -78,13 +78,12 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="mb-10 md:mb-20">
         <div className="container mx-auto border-b border-foreground/20 flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-10 gap-10">
-          <div className="md:w-1/2 flex justify-center">
+          <div className="relative h-[40vh] w-full md:w-1/2 flex justify-center mt-10">
             <Image
-              className="w-full max-w-xs md:max-w-md lg:max-w-lg mt-10"
               src={imageUrl}
               alt="Development"
-              width={500}
-              height={500}
+              fill
+              priority
             />
           </div>
           <div className="md:w-1/2 md:text-left space-y-6 flex flex-col items-center">
@@ -128,9 +127,9 @@ export default async function Home() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
           <div className="w-full lg:w-[45%] text-center space-y-5">
             <h2 className="text-5xl font-bold uppercase">FEEL FREE TO REACH US</h2>
-            <h6 className="text-gray-400 text-2xl">
+            <p className="text-gray-400 text-2xl">
               Have questions, suggestions, or just want to say hello? We&apos;d love to hear from you! Reach out anytime and we&apos;ll get back to you as soon as possible.
-            </h6>
+            </p>
             <Image src="/social-reach.png" alt="Contact" width={200} height={200} className="mx-auto w-[150px] aspect-square" />
           </div>
           <form className="w-full lg:w-1/2 xl:w-1/3 bg-neutral-800 rounded-2xl p-6 space-y-5">

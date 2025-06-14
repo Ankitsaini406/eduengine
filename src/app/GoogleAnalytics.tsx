@@ -3,7 +3,7 @@ import Script from 'next/script';
 
 const GoogleTagManagerAndAnalytics = () => {
     // const GA_ANALYTICS_ID = process.env.GA_ANALYTICS_ID;
-    const GTM_TRACKING_ID = process.env.GTM_TRACKING_ID;
+    // const GTM_TRACKING_ID = process.env.GTM_TRACKING_ID;
 
     // Check if the environment is production
     const isProduction = process.env.NODE_ENV === "production";
@@ -11,7 +11,7 @@ const GoogleTagManagerAndAnalytics = () => {
     return isProduction ? (
         <>
             {/* GTM Script */}
-            <Script defer={true} id="google-tag-manager" strategy="afterInteractive">
+            {/* <Script defer={true} id="google-tag-manager" strategy="afterInteractive">
                 {`
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -19,17 +19,17 @@ const GoogleTagManagerAndAnalytics = () => {
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','${GTM_TRACKING_ID}');
                 `}
-            </Script>
+            </Script> */}
 
             {/* GTM NoScript */}
-            <noscript>
+            {/* <noscript>
                 <iframe
                     src={`https://www.googletagmanager.com/ns.html?id=${GTM_TRACKING_ID}`}
                     height="0"
                     width="0"
                     style={{ display: 'none', visibility: 'hidden' }}
                 />
-            </noscript>
+            </noscript> */}
 
             {/* GA Script */}
             <Script

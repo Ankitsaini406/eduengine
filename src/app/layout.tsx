@@ -17,17 +17,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* ✅ Performance Hints */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+        {/* ✅ Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="google-site-verification" content="IB0t8R-5FedJG83tCKBWn29rmG0xIfXfnYtnJKGP_2c" />
+        <meta
+          name="google-site-verification"
+          content="IB0t8R-5FedJG83tCKBWn29rmG0xIfXfnYtnJKGP_2c"
+        />
 
-      <GoogleTagManagerAndAnalytics />
+        <GoogleTagManagerAndAnalytics />
       </head>
-      <body className={`antialiased bg-background text-foreground`}>
+      <body className="antialiased bg-background text-foreground">
         <SplashScreen />
-        <ChildLayout>
-          {children}
-        </ChildLayout>
+        <ChildLayout>{children}</ChildLayout>
       </body>
     </html>
   );

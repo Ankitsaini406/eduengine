@@ -64,9 +64,9 @@ export default function ServiceBlock({
                     <span className={`${colorMap[color]}`}>{highlight}</span>
                     {after}
                 </h3>
-                <p className="text-muted-foreground text-base leading-relaxed">
+                <h4 className="text-muted-foreground text-base leading-relaxed">
                     {description}
-                </p>
+                </h4>
                 <Link
                     href={link}
                     className="relative group z-10 inline-block text-primary hover:text-primary/80 font-bold items-center transition overflow-hidden text-blue-700"

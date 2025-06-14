@@ -36,7 +36,7 @@ export default function Footer() {
                 {/* Top: Social + Newsletter */}
                 <div className="flex flex-col md:flex-row justify-between gap-10">
                     <div className="flex flex-col gap-6 max-w-md">
-                        <h4 className="text-2xl lg:text-3xl font-bold">Get In Touch</h4>
+                        <span className="text-2xl lg:text-3xl font-bold">Get In Touch</span>
                         <div className="flex flex-wrap gap-4">
                             <Link href="https://www.facebook.com/eduenginetech" target="_blank" className="hover:text-background/80 transition"><Facebook size={20} /></Link>
                             <Link href="https://x.com/eduenginetech" target="_blank" className="hover:text-background/80 transition"><Twitter size={20} /></Link>
@@ -48,7 +48,7 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-col gap-6 w-full md:max-w-md">
-                        <h4 className="text-2xl lg:text-3xl font-semibold">Subscribe to Newsletter</h4>
+                        <span className="text-2xl lg:text-3xl font-semibold">Subscribe to Newsletter</span>
                         <div className="flex flex-col sm:flex-row gap-3 md:gap-0 items-center relative">
                             <div className="relative w-full">
                                 <input
@@ -57,7 +57,7 @@ export default function Footer() {
                                 />
                                 <Image src="/mail.png" alt="email icon" width={24} height={24} className="absolute left-3 top-1/2 transform -translate-y-1/2" />
                             </div>
-                            <button className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-[8.7px] rounded-md md:rounded-l-none transition">
+                            <button className="bg-red-600 hover:bg-red-500 text-white font-semibold px-4 py-[8.7px] rounded-md md:rounded-l-none transition">
                                 Submit
                             </button>
                         </div>
@@ -70,10 +70,10 @@ export default function Footer() {
                     {/* Services Accordion */}
                     <div className="w-full md:w-fit border-b pb-2.5 md:py-0 md:border-b-0">
                         <div className="cursor-pointer md:cursor-default" onClick={() => toggleAccordion("services")}>
-                            <h5 className="text-xl md:text-2xl font-semibold flex justify-between items-center">
+                            <p className="text-xl md:text-2xl font-semibold flex justify-between items-center">
                                 Services
                                 <span className="md:hidden">{openSection === "services" ? "−" : "+"}</span>
-                            </h5>
+                            </p>
                         </div>
                         <AnimatePresence initial={false}>
                             {openSection === "services" && (
@@ -113,10 +113,10 @@ export default function Footer() {
                     {/* About Accordion */}
                     <div className="w-full md:w-fit border-b pb-2.5 md:py-0 md:border-b-0">
                         <div className="cursor-pointer md:cursor-default" onClick={() => toggleAccordion("about")}>
-                            <h5 className="text-xl md:text-2xl font-semibold flex justify-between items-center">
+                            <p className="text-xl md:text-2xl font-semibold flex justify-between items-center">
                                 About
                                 <span className="md:hidden">{openSection === "about" ? "−" : "+"}</span>
-                            </h5>
+                            </p>
                         </div>
                         <AnimatePresence initial={false}>
                             {openSection === "about" && (
@@ -156,16 +156,16 @@ export default function Footer() {
                     {/* Contact Info */}
                     <div className="flex flex-col gap-4">
                         <div>
-                            <h5 className="font-semibold text-lg">Location</h5>
-                            <p>Chandpol, Sikar (Rajasthan) - 332001</p>
+                            <p className="font-semibold text-lg">Location</p>
+                            <span>Chandpol, Sikar (Rajasthan) - 332001</span>
                         </div>
                         <div>
-                            <h5 className="font-semibold text-lg">Email</h5>
-                            <p>director@eduengine.com</p>
+                            <p className="font-semibold text-lg">Email</p>
+                            <span>director@eduengine.com</span>
                         </div>
                         <div>
-                            <h5 className="font-semibold text-lg">Contact No.</h5>
-                            <p>+91 82331 01033</p>
+                            <p className="font-semibold text-lg">Contact No.</p>
+                            <span>+91 82331 01033</span>
                         </div>
                     </div>
                 </div>
