@@ -78,7 +78,7 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="mb-10 md:mb-20">
         <div className="container mx-auto border-b border-foreground/20 flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-10 gap-10">
-          <div className="relative h-[40vh] w-full md:w-1/2 flex justify-center mt-10">
+          <div className="relative h-[40vh] md:h-[50vh] lg:w-[60vh] w-full md:w-1/2 flex justify-center mt-10">
             <Image
               src={imageUrl}
               alt="Development"
