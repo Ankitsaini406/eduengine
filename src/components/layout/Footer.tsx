@@ -161,7 +161,9 @@ export default function Footer() {
                         </div>
                         <div>
                             <p className="font-semibold text-lg">Email</p>
-                            <span>director@eduengine.com</span>
+                            <Link href="mailto:director@eduengine.com">
+                                Email Here
+                            </Link>
                         </div>
                         <div>
                             <p className="font-semibold text-lg">Contact No.</p>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import FaqSection from "@/components/FrequentyQuestion";
-import Head from "next/head";
+import { Metadata } from "next";
 
 const faqcloud = [
     {
@@ -36,6 +36,49 @@ const faqcloud = [
     },
 ];
 
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Scalable Cloud Computing Services | Hosting, Data Storage & Security",
+        description:
+            "Optimize your business with secure cloud hosting, data storage, and cloud security solutions. Expert cloud migration and app development services to fuel growth.",
+        alternates: {
+            canonical: "https://eduengine.in/services/cloud-computing",
+        },
+        keywords: [
+            "Cloud Computing Services",
+            "Cloud Infrastructure",
+            "DevOps Automation",
+            "AWS Cloud Services",
+            "Azure Cloud Solutions",
+            "Cloud Migration",
+            "Scalable Cloud Hosting",
+            "Eduengine Cloud Solutions",
+        ],
+        openGraph: {
+            title: "Cloud Infrastructure & DevOps Services | Secure & Scalable Solutions",
+            description:
+                "Eduengine provides end-to-end cloud computing services — from infrastructure setup to CI/CD pipelines and cloud-native app deployment. Build faster. Scale smarter.",
+            url: "https://eduengine.in/services/cloud-computing",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/og-cloud-computing.jpg",
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Eduengine Cloud Computing Services",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Cloud Computing & DevOps Services | Eduengine",
+            description:
+                "Boost your infrastructure with secure, scalable cloud solutions. Eduengine specializes in AWS, Azure, CI/CD, and cloud-native architecture for modern businesses.",
+            // images: ["https://eduengine.in/og-cloud-computing.jpg"],
+        },
+    };
+};
+
 export default function Page() {
     const services = [
         {
@@ -51,9 +94,9 @@ export default function Page() {
             img: "/services/cloud/paas.png",
         },
         {
-            title: "Software as a Service (SaaS)",
+            title: "Cloud Hosting",
             description:
-                "SaaS delivers software applications over the internet on a subscription basis. With SaaS, users don’t need to install or manage software on their own devices. The cloud provider hosts, manages, and updates the software, ensuring that users always have access to the latest features and security patches.",
+                "Secure, reliable cloud hosting solutions for businesses of all sizes.",
             img: "/services/cloud/saas.png",
         },
         {
@@ -90,14 +133,6 @@ export default function Page() {
 
     return (
         <>
-
-            {/* ✅ Canonical Meta Tag */}
-            <Head>
-                <title>Cloud Computing | Edulibrary</title>
-                <meta name="description" content="Explore secure, scalable cloud solutions including IaaS, PaaS, SaaS, and more. Empower your business with Edulibrary's cloud services." />
-                <link rel="canonical" href="https://eduengine.in/services/cloud-computing" />
-            </Head>
-
             {/* Hero Section */}
             <section className="flex flex-col md:flex-row justify-around items-center pt-15 md:pt-0 px-8 bg-black text-white relative">
                 <div className="w-full md:w-[65%] lg:w-[60%] xl:w-[40%]">
@@ -105,9 +140,9 @@ export default function Page() {
                         Empowering Business Growth Through Secure<br />
                         <span className="text-[#00f0ff]">Cloud Computing</span>
                     </h1>
-                    <p className="text-sm lg:text-lg mb-4 opacity-70">
-                        Ensure sustainable growth and operational resilience in an ever-evolving digital landscape powered by the cloud.
-                    </p>
+                    <h2 className="text-sm lg:text-lg mb-4 opacity-70">
+                        Cloud computing is key to improving efficiency and ensuring scalability for modern businesses. At Eduengine, we offer comprehensive cloud computing solutions to help you scale your operations with ease.
+                    </h2>
                 </div>
 
                 <div className="mb-8 lg:mb-0">
@@ -123,9 +158,9 @@ export default function Page() {
 
             {/* Services Section */}
             <section className="md:container mx-auto px-4 text-center ">
-                <h2 className="text-2xl lg:text-4xl my-8 tracking-wide pb-2">
+                <h3 className="text-2xl lg:text-4xl my-8 tracking-wide pb-2">
                     SERVICES WE OFFER
-                </h2>
+                </h3>
                 <div className="grid gap-8 grid-cols-1 md:grid-cols-2 px-4 md:px-0">
                     {services.map((service, index) => (
                         <div
@@ -142,10 +177,10 @@ export default function Page() {
                                         className="w-20 h-20 object-contain transition-transform duration-300 group-hover:scale-105"
                                     />
                                 </div>
-                                <h2 className="text-2xl font-bold text-[#00f0ff] mb-4">
+                                <h4 className="text-2xl font-bold text-[#00f0ff] mb-4">
                                     {service.title}
-                                </h2>
-                                <p
+                                </h4>
+                                <h5
                                     className="text-base text-gray-300 leading-relaxed text-center"
                                     dangerouslySetInnerHTML={{ __html: service.description }}
                                 />

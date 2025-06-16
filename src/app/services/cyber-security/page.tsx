@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import FaqSection from "@/components/FrequentyQuestion";
-import Head from "next/head";
+import { Metadata } from "next";
 
 const cyberdata = [
     {
@@ -36,6 +36,51 @@ const cyberdata = [
     }
 ];
 
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Comprehensive Cybersecurity Services | Threat Detection & Data Protection",
+        description:
+            "Safeguard your business with comprehensive cybersecurity services. From risk assessment to data encryption and compliance—stay secure in the face of evolving threats.",
+        alternates: {
+            canonical: "https://eduengine.in/services/cyber-security",
+        },
+        keywords: [
+            "Cybersecurity Services",
+            "Threat Detection",
+            "Data Protection",
+            "Network Security",
+            "Cyber Risk Assessment",
+            "Data Encryption",
+            "Compliance Solutions",
+            "Eduengine Cybersecurity",
+            "Security Monitoring",
+        ],
+        openGraph: {
+            title: "Cybersecurity Solutions | Risk Management & Threat Protection",
+            description:
+                "Protect your digital assets with Eduengine. We offer expert cybersecurity services including penetration testing, compliance audits, and continuous monitoring.",
+            url: "https://eduengine.in/services/cyber-security",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/og-cyber-security.jpg",
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Eduengine Cybersecurity Services",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Cybersecurity & Data Protection Services | Eduengine",
+            description:
+                "Eduengine provides proactive cybersecurity services to keep your systems secure—from threat prevention to data compliance and secure infrastructure.",
+            // images: ["https://eduengine.in/og-cyber-security.jpg"],
+        },
+    };
+};
+
+
 const Cybersecurity = () => {
     const services = [
         {
@@ -45,7 +90,7 @@ const Cybersecurity = () => {
             img: "/services/cyber-security/user.png",
         },
         {
-            title: "Data Protection with Advanced Encryption",
+            title: "Data Encryption",
             description:
                 "Shield your sensitive information—both in storage and during transmission—with enterprise-grade encryption. Our end-to-end solutions ensure confidentiality, data integrity, and strong defense against unauthorized access and cyber threats.",
             img: "/services/cyber-security/key.png",
@@ -90,16 +135,6 @@ const Cybersecurity = () => {
 
     return (
         <section className="pt-15">
-
-            <Head>
-                <title>Cyber Security | Eduengine</title>
-                <meta
-                    name="description"
-                    content="Protect your digital assets with Eduengine's advanced cyber security services. We offer risk assessment, threat detection, firewall setup, and 24/7 monitoring."
-                />
-                <link rel="canonical" href="https://eduengine.in/services/cyber-security" />
-            </Head>
-
             {/* Flex container: text left, image right */}
             <div className="px-6 container mx-auto flex flex-col md:flex-row justify-center items-center mb-16">
                 {/* Text content on left */}
@@ -111,9 +146,7 @@ const Cybersecurity = () => {
                     </h1>
 
                     <p className="leading-relaxed mb-8 opacity-70">
-                        Unlock Your Business&apos;s Potential with Advanced Cybersecurity.
-                        Ensure sustainable growth and operational resilience in an ever-evolving
-                        digital landscape.
+                        In an increasingly digital world, protecting your business from cyber threats is crucial. Eduengine’s cybersecurity services provide top-tier protection for your sensitive data and help ensure regulatory compliance.
                     </p>
 
                     {/* <a

@@ -1,7 +1,13 @@
 import FaqSection from "@/components/FrequentyQuestion";
+import { Metadata } from "next";
 import Image from "next/image";
 
 const FAQ_LIST = [
+    {
+        question: "Why Choose Us?",
+        answer:
+            "Fast development times Skilled developers with expertise in modern web technologies Ongoing support and maintenance",
+    },
     {
         question: "What services do you offer?",
         answer:
@@ -62,21 +68,21 @@ const CARD_DATA = [
 
 const PROCESS_STEPS = [
     {
-        title: "DISCOVERY & PLANNING",
+        title: "E-commerce Platforms",
         description:
-            "We start by understanding your business, goals, audience, and competitors to create a strategic roadmap.",
+            "Build secure, scalable, and user-friendly e-commerce websites with integrated payment gateways and product management systems.",
         image: "/services/app/app1.jpg",
     },
     {
-        title: "UI/UX DESIGN",
+        title: "Custom Web Applications",
         description:
-            "Our team designs visually appealing interfaces with user-centric experiences for all devices.",
+            "Develop custom web applications designed to meet your business needs with advanced functionalities.",
         image: "/services/app/app2.jpg",
     },
     {
-        title: "DEVELOPMENT",
+        title: "SEO-Friendly Websites",
         description:
-            "We bring designs to life using modern tech stacks for speed, security, and scalability.",
+            " Our websites are optimized for search engines to enhance your visibility and rank higher in search results.",
         image: "/services/app/app3.jpg",
     },
     {
@@ -86,20 +92,61 @@ const PROCESS_STEPS = [
         image: "/services/app/app4.jpg",
     },
     {
-        title: "LAUNCH",
+        title: "Responsive Designs",
         description:
-            "Once tested, we securely launch your site and ensure smooth deployment.",
+            "Websites that look great on every device, from desktop to mobile, ensuring an optimal user experience.",
         image: "/services/app/app5.jpg",
     },
     {
-        title: "SUPPORT & GROWTH",
+        title: "Support & Growth",
         description:
             "We offer ongoing support, performance monitoring, and updates to foster growth.",
         image: "/services/app/app6.jpg",
     },
 ];
 
-export default function WebDesign() {
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Expert Web Development Services | Custom, SEO-Friendly & Scalable",
+        description:
+            "Unlock your business’s potential with fast, responsive, and SEO-optimized websites. Offering custom web apps, eCommerce platforms, and scalable digital solutions to fuel growth.",
+        alternates: {
+            canonical: "https://eduengine.in/services/web-development",
+        },
+        keywords: [
+            "Web Development",
+            "UI/UX Design",
+            "Responsive Websites",
+            "SEO Optimization",
+            "Custom Website Design",
+            "Eduengine Web Services",
+        ],
+        openGraph: {
+            title: "Custom Web Design & Development | Eduengine",
+            description:
+                "Eduengine builds fast, responsive, and SEO-optimized websites tailored to your business needs.",
+            url: "https://eduengine.in/services/web-development",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/og-image.jpg",
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Eduengine Web Development",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Custom Web Design & Development | Eduengine",
+            description:
+                "Eduengine provides end-to-end web development and custom design solutions to help businesses thrive online.",
+            // images: ["https://eduengine.in/og-image.jpg"],
+        },
+    };
+};
+
+export default async function Page() {
     return (
         <div className="min-h-screen w-full">
             {/* Hero Section */}
@@ -107,9 +154,10 @@ export default function WebDesign() {
                 <div className=" container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
                     <div className="w-full md:w-1/2 text-foreground text-center md:text-left">
                         <h3 className="text-xl md:text-3xl md:max-w-2xl font-semibold">
-                            We provide support for a wide range of programming languages to build your
-                            website, including HTML, CSS, JavaScript, PHP, Python, Ruby, and more. Our
-                            solutions are custom-crafted for flexibility and functionality.
+                            We provide support for a wide range of programming languages to
+                            build your website, including HTML, CSS, JavaScript, PHP, Python,
+                            Ruby, and more. Our solutions are custom-crafted for flexibility
+                            and functionality.
                         </h3>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center">
@@ -148,7 +196,7 @@ export default function WebDesign() {
             <FaqSection questions={FAQ_LIST} />
         </div>
     );
-};
+}
 
 type CardProps = {
     title: string;
@@ -158,13 +206,17 @@ type CardProps = {
 };
 
 const Card = ({ title, description, image, bgColor }: CardProps) => (
-    <div className={`max-w-[300px] min-w-[200px] rounded-lg shadow-md flex flex-col items-center ${bgColor} overflow-hidden`}>
+    <div
+        className={`max-w-[300px] min-w-[200px] rounded-lg shadow-md flex flex-col items-center ${bgColor} overflow-hidden`}
+    >
         <div className="relative h-48 w-full">
             <Image src={image} alt={title} fill className=" object-cover" />
         </div>
         <div className="p-4">
-        <h1 className="mt-3 font-semibold text-xl text-center text-background">{title}</h1>
-        <p className="mt-4 text-sm text-center text-background">{description}</p>
+            <h1 className="mt-3 font-semibold text-xl text-center text-background">
+                {title}
+            </h1>
+            <p className="mt-4 text-sm text-center text-background">{description}</p>
         </div>
     </div>
 );
@@ -176,8 +228,16 @@ type ProcessStepProps = {
     reverse: boolean;
 };
 
-const ProcessStep = ({ title, description, image, reverse }: ProcessStepProps) => (
-    <div className={`w-full flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} justify-center items-center gap-6 md:gap-20`}>
+const ProcessStep = ({
+    title,
+    description,
+    image,
+    reverse,
+}: ProcessStepProps) => (
+    <div
+        className={`w-full flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"
+            } justify-center items-center gap-6 md:gap-20`}
+    >
         <div className="relative w-[200px] h-[200px] rounded-full overflow-hidden shrink-0">
             <Image src={image} alt={title} fill className="object-cover" />
         </div>

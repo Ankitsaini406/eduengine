@@ -30,7 +30,7 @@ export default function TextFade({
                     transition={{ duration: 0.5 }}
                     className="absolute w-full text-center"
                 >
-                    <motion.span
+                    <motion.h2
                         className="bg-clip-text text-transparent"
                         style={{
                             backgroundImage:
@@ -47,7 +47,7 @@ export default function TextFade({
                         }}
                     >
                         {titles[index]}
-                    </motion.span>
+                    </motion.h2>
                 </motion.div>
             </AnimatePresence>
         </div>

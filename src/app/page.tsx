@@ -83,6 +83,7 @@ export default async function Home() {
               src={imageUrl}
               alt="Development"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
           </div>
@@ -109,10 +110,10 @@ export default async function Home() {
 
       {/* Intro Section */}
       <section className="container mx-auto text-center px-5 md:w-[900px] ">
-        <h2 className="text-2xl md:text-5xl font-extrabold uppercase pb-5">🚀 Our Leading Digital Services</h2>
-        <p className="text-gray-300 text-lg">
+        <h3 className="text-2xl md:text-5xl font-extrabold uppercase pb-5">🚀 Our Leading Digital Services</h3>
+        <h4 className="text-gray-300 text-lg">
           At Eduengine, we combine technology, invention, and moxie to deliver strategic, secure, and scalable results that drive business growth. From startups to enterprises, we help associations thrive in the digital period with our comprehensive range of IT services.
-        </p>
+        </h4>
       </section>
 
       {/* Service Blocks */}
@@ -126,7 +127,7 @@ export default async function Home() {
       <section className="xl:container mx-auto p-5 mb-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
           <div className="w-full lg:w-[45%] text-center space-y-5">
-            <h2 className="text-5xl font-bold uppercase">FEEL FREE TO REACH US</h2>
+            <p className="text-5xl font-bold uppercase">FEEL FREE TO REACH US</p>
             <p className="text-gray-400 text-2xl">
               Have questions, suggestions, or just want to say hello? We&apos;d love to hear from you! Reach out anytime and we&apos;ll get back to you as soon as possible.
             </p>

@@ -1,5 +1,5 @@
 import FaqSection from "@/components/FrequentyQuestion";
-import Head from "next/head";
+import { Metadata } from "next";
 import Image from "next/image";
 
 const designdata = [
@@ -41,6 +41,50 @@ const designdata = [
 
 ];
 
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Creative Graphic Design & Animation Services | Eduengine",
+        description:
+            "Captivate your audience with stunning graphic designs, motion graphics, and branding visuals. Eduengine delivers custom creatives for logos, social media, and animations.",
+        alternates: {
+            canonical: "https://eduengine.in/services/graphic-design",
+        },
+        keywords: [
+            "Graphic Design Services",
+            "Animation Services",
+            "Logo Design",
+            "Motion Graphics",
+            "Brand Identity",
+            "Social Media Creatives",
+            "Eduengine Graphic Design",
+            "Custom Design Solutions",
+        ],
+        openGraph: {
+            title: "Graphic Design & Animation Services | Custom Logos & Branding",
+            description:
+                "Get custom logo design, animated videos, and branding assets tailored to your business. Eduengine crafts visuals that engage, inform, and inspire.",
+            url: "https://eduengine.in/services/graphic-design",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/og-graphic-design.jpg",
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Eduengine Graphic Design Services",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Creative Graphic & Animation Services | Eduengine",
+            description:
+                "Stand out with impactful designs and motion graphics. We create logos, branding visuals, and animations that bring your ideas to life.",
+            // images: ["https://eduengine.in/og-graphic-design.jpg"],
+        },
+    };
+};
+
+
 export default function Design() {
     const serviceData = [
         { title: "App/Web UI/UX Design", img: "/services/graphic-design/business-cards.png" },
@@ -56,25 +100,14 @@ export default function Design() {
 
     return (
         <div className="py-8 px-4">
-            <Head>
-                <title>Graphic Design | Eduengine</title>
-                <meta
-                    name="description"
-                    content="Bring your brand to life with Eduengine's creative graphic design services. From logos and branding to social media and print design, we craft visuals that captivate."
-                />
-                <link rel="canonical" href="https://eduengine.in/services/graphic-design" />
-            </Head>
-
             <main className="max-w-screen-xl mx-auto text-left">
                 <h1 className="text-5xl font-bold mb-6 pt-16">
                     Get Your Best Design
                 </h1>
 
-                <p className="text-white text-xl md:text-2xl mb-10 max-w-3xl">
-                    Need designs that stand out and represent your brand? From logos and
-                    flyers to social media posts and full brand kits — we craft visuals
-                    that match your vision with style and precision.
-                </p>
+                <h2 className="text-white text-xl md:text-2xl mb-10 max-w-3xl">
+                    Your brand identity is key to standing out in a competitive market. Our graphic design services help your business leave a lasting impression. From logo design to full brand identity packages, we offer creative solutions that connect with your audience and communicate your brand’s message effectively.
+                </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16">
                     <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto group">
@@ -82,7 +115,7 @@ export default function Design() {
                         <Image src="/services/graphic-design/photo.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Photography</h3>
-                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We offer professional photography services to give your brand the perfect visual edge - from product shoots to personal portraits.</h5>
+                            <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We offer professional photography services to give your brand the perfect visual edge - from product shoots to personal portraits.</h4>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
@@ -91,7 +124,7 @@ export default function Design() {
                             <Image src="/services/graphic-design/graphic-wall.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Graphic Design</h3>
-                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Along with core services, we also offer high-quality graphic design — from branding and social media posts to promotional materials.</h5>
+                                <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Along with core services, we also offer high-quality graphic design — from branding and social media posts to promotional materials.</h4>
                             </div>
                         </div>
                         <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
@@ -99,7 +132,7 @@ export default function Design() {
                             <Image src="/services/app/app3.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">UI/UX Design</h3>
-                                <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Beyond UI/UX, we bring your brand to life with custom graphic design for logos, flyers, and more.</h5>
+                                <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Beyond UI/UX, we bring your brand to life with custom graphic design for logos, flyers, and more.</h4>
                             </div>
                         </div>
                     </div>
@@ -108,15 +141,15 @@ export default function Design() {
                         <Image src="/services/graphic-design/graphic-brading.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Branding</h3>
-                            <h5 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We don&apos;t just design interfaces — we also build brands. Let us craft your visual identity from the ground up.</h5>
+                            <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We don&apos;t just design interfaces — we also build brands. Let us craft your visual identity from the ground up.</h4>
                         </div>
                     </div>
                 </div>
 
                 <div className="text-center mb-16">
-                    <h3 className="text-3xl text-white font-semibold mb-6 animate-pulse pb-5">
+                    <h5 className="text-3xl text-white font-semibold mb-6 animate-pulse pb-5">
                         MORE SERVICES
-                    </h3>
+                    </h5>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pb-8">
                         {serviceData.map((service) => (
                             <div
@@ -146,7 +179,7 @@ export default function Design() {
                         className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-md shadow-gray-500"
                     />
                     <div>
-                        <h4 className="text-3xl md:text-5xl font-bold pb-5">Your Success, Our Vision</h4>
+                        <h5 className="text-3xl md:text-5xl font-bold pb-5">Your Success, Our Vision</h5>
                         <h6 className="text-base md:text-xl lg:text-2xl opacity-60">We believe great design is more than just visuals - it&apos;s a tool to drive your success. Our vision is to turn your goals into stunning creative solutions that connect, inspire, and perform. When you grow, we grow with you.</h6>
                     </div>
                 </div>

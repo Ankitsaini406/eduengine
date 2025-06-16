@@ -1,9 +1,7 @@
-"use client";
-
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
 import FaqSection from "@/components/FrequentyQuestion";
+import { Metadata } from "next";
 
 const appdata = [
     {
@@ -34,24 +32,24 @@ const appdata = [
 
 const steps = [
     {
-        title: "Requirement Gathering",
+        title: "Android App Development",
         img: "/services/app/app1.jpg",
-        desc: "We start by understanding your vision, business goals, and target audience to define clear app objectives.",
+        desc: "Build high-performing Android apps tailored to your business needs.",
     },
     {
-        title: "Planning & Strategy",
+        title: "iOS App Development",
         img: "/services/app/app2.jpg",
-        desc: "We create a roadmap, select the right tech stack, and plan features, timelines, and resources.",
+        desc: "Create smooth and intuitive iOS apps for a superior user experience.",
+    },
+    {
+        title: "Cross-Platform Apps",
+        img: "/services/app/app3.jpg",
+        desc: "Develop apps that work seamlessly across both Android and iOS platforms.",
     },
     {
         title: "UI/UX Design",
-        img: "/services/app/app3.jpg",
-        desc: "Our design team crafts intuitive, engaging, and user-friendly interfaces that reflect your brand.",
-    },
-    {
-        title: "App Development",
         img: "/services/app/app4.jpg",
-        desc: "Our developers build the front-end and back-end using clean, scalable code with regular updates and reviews.",
+        desc: " We design user interfaces that are intuitive and enhance user experience.",
     },
     {
         title: "Testing & QA",
@@ -65,28 +63,63 @@ const steps = [
     },
 ];
 
-const AppDevelopment = () => {
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Custom Mobile App Development | Android, iOS & Cross-Platform Solutions",
+        description:
+            "Bring your ideas to life with secure, scalable mobile apps. Expert Android, iOS, and cross-platform development with seamless UX/UI for top-tier user experiences.",
+        alternates: {
+            canonical: "https://eduengine.in/services/app-development",
+        },
+        keywords: [
+            "App Development Services",
+            "Mobile App Development",
+            "iOS App Development",
+            "Android App Development",
+            "Cross-Platform Apps",
+            "Eduengine App Solutions",
+            "Web App Development",
+            "Custom Software Development",
+        ],
+        openGraph: {
+            title: "App Development Services | iOS, Android & Web Solutions | Eduengine",
+            description:
+                "Launch powerful iOS, Android, and web applications with Eduengine. From UI/UX to deployment, we create custom apps that engage users and grow businesses.",
+            url: "https://eduengine.in/services/app-development",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/og-app-development.jpg",
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Eduengine App Development Services",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Mobile & Web App Development Services | Eduengine",
+            description:
+                "Eduengine builds custom Android, iOS, and web applications with seamless performance and modern design. Let's bring your app idea to life.",
+            // images: ["https://eduengine.in/og-app-development.jpg"],
+        },
+    };
+};
+
+
+export default async function Page() {
     return (
         <div className="min-h-screen bg-radial from-[#0d0d0d] to-[#1a1a1a] px-4 py-16">
-            {/* SEO Meta Tags */}
-            <Head>
-                <title>App Development Services | EduEngine</title>
-                <meta
-                    name="description"
-                    content="We build scalable, high-performance mobile and web applications tailored to your business needs. Our expert team ensures quality from planning to deployment."
-                />
-                <link rel="canonical" href="https://eduengine.in/services/app-development" />
-            </Head>
 
             {/* Top Section */}
             <div className="flex flex-wrap items-center justify-between gap-12 mb-16 max-w-7xl mx-auto">
                 <div className="max-w-xl flex-1 space-y-4">
-                    <h2 className="text-4xl font-bold">
+                    <h1 className="text-4xl font-bold">
                         We build powerful, user-friendly mobile and web apps tailored to your business needs.
+                    </h1>
+                    <h2>
+                        In today’s digital world, a mobile app can significantly boost your business’s reach and engagement. At Eduengine, we offer end-to-end mobile app development services, including strategy, design, development, and maintenance.
                     </h2>
-                    <p>
-                        From design to deployment, our expert team delivers innovative, scalable, and high-performance solutions that drive growth and engagement.
-                    </p>
                 </div>
                 <div className="flex-1 flex justify-center">
                     <Image
@@ -134,5 +167,3 @@ const AppDevelopment = () => {
         </div>
     );
 };
-
-export default AppDevelopment;

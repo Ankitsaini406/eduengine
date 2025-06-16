@@ -59,14 +59,14 @@ export default function ServiceBlock({
             </motion.div>
 
             <div className="md:w-[500px] text-center space-y-4">
-                <h3 className="text-3xl font-semibold text-foreground">
+                <h5 className="text-3xl font-semibold text-foreground">
                     {before}
                     <span className={`${colorMap[color]}`}>{highlight}</span>
                     {after}
-                </h3>
-                <h4 className="text-muted-foreground text-base leading-relaxed">
+                </h5>
+                <h6 className="text-muted-foreground text-base leading-relaxed">
                     {description}
-                </h4>
+                </h6>
                 <Link
                     href={link}
                     className="relative group z-10 inline-block text-primary hover:text-primary/80 font-bold items-center transition overflow-hidden text-red-600"
