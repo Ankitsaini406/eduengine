@@ -38,12 +38,12 @@ export default function Footer() {
                     <div className="flex flex-col gap-6 max-w-md">
                         <span className="text-2xl lg:text-3xl font-bold">Get In Touch</span>
                         <div className="flex flex-wrap gap-4">
-                            <Link href="https://www.facebook.com/eduenginetech" target="_blank" className="hover:text-background/80 transition"><Facebook size={20} /></Link>
-                            <Link href="https://x.com/eduenginetech" target="_blank" className="hover:text-background/80 transition"><Twitter size={20} /></Link>
-                            <Link href="https://www.instagram.com/eduenginetech/" target="_blank" className="hover:text-background/80 transition"><Instagram size={20} /></Link>
-                            <Link href="https://www.linkedin.com/company/eduengine/" target="_blank" className="hover:text-background/80 transition"><Linkedin size={20} /></Link>
-                            <Link href="https://www.threads.net/@officialeduengine" target="_blank" className="hover:text-background/80 transition"><PiThreadsLogoBold size={20} /></Link>
-                            <Link href="https://www.youtube.com/@eduenginetech" target="_blank" className="hover:text-background/80 transition"><Youtube size={20} /></Link>
+                            <Link href="https://www.facebook.com/eduenginetech" aria-label="Facebook" target="_blank" className="hover:text-background/80 transition"><Facebook size={20} /></Link>
+                            <Link href="https://x.com/eduenginetech" target="_blank" aria-label="Twitter" className="hover:text-background/80 transition"><Twitter size={20} /></Link>
+                            <Link href="https://www.instagram.com/eduenginetech/" aria-label="Instagram" target="_blank" className="hover:text-background/80 transition"><Instagram size={20} /></Link>
+                            <Link href="https://www.linkedin.com/company/eduengine/" aria-label="Linkedin" target="_blank" className="hover:text-background/80 transition"><Linkedin size={20} /></Link>
+                            <Link href="https://www.threads.net/@officialeduengine" aria-label="Tread" target="_blank" className="hover:text-background/80 transition"><PiThreadsLogoBold size={20} /></Link>
+                            <Link href="https://www.youtube.com/@eduenginetech" aria-label="You Tube" target="_blank" className="hover:text-background/80 transition"><Youtube size={20} /></Link>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@ export default function Footer() {
                                 />
                                 <Image src="/mail.png" alt="email icon" width={24} height={24} className="absolute left-3 top-1/2 transform -translate-y-1/2" />
                             </div>
-                            <button className="bg-red-600 hover:bg-red-500 text-white font-semibold px-4 py-[8.7px] rounded-md md:rounded-l-none transition">
+                            <button className="bg-red-600 hover:bg-red-500 cursor-pointer text-white font-semibold px-4 py-[8.7px] rounded-md md:rounded-l-none transition">
                                 Submit
                             </button>
                         </div>

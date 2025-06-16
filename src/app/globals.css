@@ -1,8 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@0;1&family=Manrope:wght@200..800&family=Open+Sans:ital@0;1&display=swap');
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/bebas-neue-v10-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/josefin-sans-v25-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/josefin-sans-v25-latin-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('/fonts/manrope-v13-latin-variable-wghtOnly.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/open-sans-v34-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/open-sans-v34-latin-italic.woff2') format('woff2');
+}
+
+/* ==== Tailwind CSS base ==== */
 @import "tailwindcss";
 
 html, body {
-  font-family: 'Manrope';
+  font-family: 'Manrope', sans-serif;
   box-sizing: border-box;
 }
 

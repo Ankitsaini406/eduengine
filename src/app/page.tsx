@@ -116,7 +116,7 @@ export default async function Home() {
       </section>
 
       {/* Service Blocks */}
-      <div className="container mx-auto border-b border-foreground/20 pb-14 flex flex-col gap-10 mb-10 md:mb-20">
+      <div className="container mx-auto border-b border-foreground/20 pb-14 flex flex-col mb-10 md:mb-20">
         {section.map((item, index) => (
           <ServiceBlock key={index} {...item} />
         ))}
@@ -138,13 +138,14 @@ export default async function Home() {
             <Input label="Contact" type="tel" />
             <div>
               <label className="block text-sm mb-2">How we can help</label>
-              <textarea
+              <textarea 
+                aria-label="Message"
                 className="w-full p-3 rounded-lg bg-gray-950 text-white min-h-[100px] resize-none"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="bg-red-600 hover:bg-red-700 px-8 py-2 rounded-md text-white font-bold "
+              className="bg-red-600 hover:bg-red-500 cursor-pointer px-8 py-2 rounded-md text-white font-bold "
             >
               SUBMIT
             </button>
@@ -161,6 +162,7 @@ function Input({ label, type }: { label: string; type: string }) {
       <label className="block text-sm mb-2">{label}</label>
       <input
         type={type}
+        aria-label={label}
         className="w-full p-3 rounded-lg bg-gray-950 text-white"
       />
     </div>
