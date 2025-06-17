@@ -8,7 +8,7 @@ const section = [
   {
     title: "🌐 Web Development Services make a Strong Online Presence ",
     description: "Unleash your business's full eventuality with our professional web development services. We draft presto, responsive, and SEO-friendly websites adapted to your unique business pretensions. Whether you need marketable Websites E-commerce Platforms Custom Web operations Our expert web formulators ensure indefectible functionality, modern design, mobile responsiveness, and high-performance optimization — delivering exceptional user exploits that convert guests into guests. Keywords optimized web development services, responsive websites, SEO-- commerce platforms, custom web operations ",
-    imgSrc: "/web.jpg",
+    imgSrc: "/web.webp",
     reverse: true,
     highlight: "Web Services",
     color: "amber-300",
@@ -17,7 +17,7 @@ const section = [
   {
     title: "🎨 Graphic Design Services Elevate Your Brand Identity ",
     description: "Stand out in a crowded request with our creative graphic design services. Our talented introducers transform your vision into stunning illustrations that effectively communicate your brand communication and appeal to your target cult. We specialize in Logo Design circulars & flyers Social Media Creatives Complete Brand Identity Packages With a perfect blend of creativity and strategic design, we help businesses strengthen their brand presence and leave a lasting print. Keywords optimized graphic design services, brand identity, totem design, social media creatives ",
-    imgSrc: "/graphic-design.png",
+    imgSrc: "/graphic-design.webp",
     reverse: false,
     highlight: "Graphic Design",
     color: "amber-300",
@@ -26,7 +26,7 @@ const section = [
   {
     title: "📱 Mobile App Development Bring Your Ideas to Life ",
     description: "Transform your business ideas into significant, user-friendly mobile operations. Our custom app development services cover every stage — from creativity and UI/ UX design to development, testing, and ongoing conservation. We make Android Apps iOS Apps Cross-Platform operations Our apps are secure, scalable, and optimized for maximum performance, furnishing your stoners with indefectible mobile exploits that drive business growth. Keywords optimized mobile app development, Android app development, iOS app-platform apps, UI/ UX design. ",
-    imgSrc: "/app.png",
+    imgSrc: "/app.webp",
     reverse: true,
     highlight: "App Development",
     color: "amber-300",
@@ -35,7 +35,7 @@ const section = [
   {
     title: "☁️ Cloud Computing Services Scale Your Business Seamlessly ",
     description: "Maximize effectiveness and strictness with our pall calculating results. We help businesses migrate, manage, and optimize their IT structure on the pall with pall Hosting Data Storage & Provisory Cloud Security pall-Native App Development With our pall moxie, you gain enhanced security, high performance, cost savings, and continued scalability that energy long-term business growth. Keywords optimized pall computing results, pall hosting, data storage, pall migration, pall-native operations ",
-    imgSrc: "/cloud.jpg",
+    imgSrc: "/cloud.webp",
     reverse: false,
     highlight: "Cloud Computing",
     color: "amber-300",
@@ -44,7 +44,7 @@ const section = [
   {
     title: "🔒 Cyber Security Services cover Your Digital means ",
     description: "Secure your business from growing digital risks with our comprehensive cyber security services. Our pukka experts deliver visionary protection through trouble Detection & Risk Assessment Vulnerability operation Data Encryption & insulation Incident Response & Compliance We guard your critical data, ensure nonsupervisory compliance, and give you peace of mind — allowing you to concentrate on growing your business with confidence. Keywords optimized cyber security services, trouble discovery, trouble operation, data protection, incident response ",
-    imgSrc: "/cyber.jpg",
+    imgSrc: "/cyber.webp",
     reverse: true,
     highlight: "Cyber Security",
     color: "amber-300",
@@ -53,7 +53,7 @@ const section = [
   {
     title: "🤖 Machine literacy results Drive Innovation with AI ",
     description: "Influence the power of machine knowledge and AI to automate processes, cast trends, and deliver substantiated exploits. Our machine knowledge services include Custom Model Development Predictive Analytics Natural Language Processing( NLP) Computer Vision AI Integration We help you turn complex data into practicable perceptivity, empowering your business to make smarter, data-driven opinions. Keywords optimized machine knowledge results, predictive analytics, AI development, NLP, data-driven perceptivity ",
-    imgSrc: "/ai.jpg",
+    imgSrc: "/ai.webp",
     reverse: false,
     highlight: "Machine Learning",
     color: "amber-300",
@@ -176,7 +176,7 @@ export default async function Home() {
             <p className="text-gray-400 text-2xl">
               Have questions, suggestions, or just want to say hello? We&apos;d love to hear from you! Reach out anytime and we&apos;ll get back to you as soon as possible.
             </p>
-            <Image src="/social-reach.png" alt="Contact" width={200} height={200} className="mx-auto w-[150px] aspect-square" />
+            <Image src="/social-reach.webp" alt="Contact" width={200} height={200} className="mx-auto w-[150px] aspect-square" />
           </div>
           <form className="w-full lg:w-1/2 xl:w-1/3 bg-neutral-800 rounded-2xl p-6 space-y-5">
             <Input label="Name" type="text" />

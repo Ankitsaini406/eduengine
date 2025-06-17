@@ -87,15 +87,15 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 export default function Design() {
     const serviceData = [
-        { title: "App/Web UI/UX Design", img: "/services/graphic-design/business-cards.png" },
-        { title: "3D Modelling", img: "/services/graphic-design/3d-model.png" },
-        { title: "Typography", img: "/services/graphic-design/edit-text.png" },
-        { title: "Illustration", img: "/services/graphic-design/pen-tool.png" },
-        { title: "Videography", img: "/services/graphic-design/videography.png" },
-        { title: "Print Design", img: "/services/graphic-design/printing-machine.png" },
-        { title: "Banner & Ad Design", img: "/services/graphic-design/advertising.png" },
-        { title: "Logo Design", img: "/services/graphic-design/logo-design.png" },
-        { title: "Animation", img: "/services/graphic-design/motion.png" },
+        { title: "App/Web UI/UX Design", img: "/services/graphic-design/business-cards.webp" },
+        { title: "3D Modelling", img: "/services/graphic-design/3d-model.webp" },
+        { title: "Typography", img: "/services/graphic-design/edit-text.webp" },
+        { title: "Illustration", img: "/services/graphic-design/pen-tool.webp" },
+        { title: "Videography", img: "/services/graphic-design/videography.webp" },
+        { title: "Print Design", img: "/services/graphic-design/printing-machine.webp" },
+        { title: "Banner & Ad Design", img: "/services/graphic-design/advertising.webp" },
+        { title: "Logo Design", img: "/services/graphic-design/logo-design.webp" },
+        { title: "Animation", img: "/services/graphic-design/motion.webp" },
     ];
 
     return (
@@ -112,7 +112,7 @@ export default function Design() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16">
                     <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto group">
                         <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                        <Image src="/services/graphic-design/photo.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                        <Image src="/services/graphic-design/photo.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Photography</h3>
                             <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We offer professional photography services to give your brand the perfect visual edge - from product shoots to personal portraits.</h4>
@@ -121,7 +121,7 @@ export default function Design() {
                     <div className="flex flex-col gap-4">
                         <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
                             <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                            <Image src="/services/graphic-design/graphic-wall.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                            <Image src="/services/graphic-design/graphic-wall.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Graphic Design</h3>
                                 <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Along with core services, we also offer high-quality graphic design — from branding and social media posts to promotional materials.</h4>
@@ -129,7 +129,7 @@ export default function Design() {
                         </div>
                         <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
                             <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                            <Image src="/services/app/app3.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                            <Image src="/services/app/app3.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">UI/UX Design</h3>
                                 <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Beyond UI/UX, we bring your brand to life with custom graphic design for logos, flyers, and more.</h4>
@@ -138,7 +138,7 @@ export default function Design() {
                     </div>
                     <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto group">
                         <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                        <Image src="/services/graphic-design/graphic-brading.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                        <Image src="/services/graphic-design/graphic-brading.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Branding</h3>
                             <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We don&apos;t just design interfaces — we also build brands. Let us craft your visual identity from the ground up.</h4>
@@ -174,7 +174,7 @@ export default function Design() {
                     <Image
                         height={300}
                         width={400}
-                        src="/services/graphic-design/graphic-success.jpg"
+                        src="/services/graphic-design/graphic-success.webp"
                         alt="Design Portfolio"
                         className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-md shadow-gray-500"
                     />

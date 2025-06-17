@@ -33,32 +33,32 @@ const appdata = [
 const steps = [
     {
         title: "Android App Development",
-        img: "/services/app/app1.jpg",
+        img: "/services/app/app1.webp",
         desc: "Build high-performing Android apps tailored to your business needs.",
     },
     {
         title: "iOS App Development",
-        img: "/services/app/app2.jpg",
+        img: "/services/app/app2.webp",
         desc: "Create smooth and intuitive iOS apps for a superior user experience.",
     },
     {
         title: "Cross-Platform Apps",
-        img: "/services/app/app3.jpg",
+        img: "/services/app/app3.webp",
         desc: "Develop apps that work seamlessly across both Android and iOS platforms.",
     },
     {
         title: "UI/UX Design",
-        img: "/services/app/app4.jpg",
+        img: "/services/app/app4.webp",
         desc: " We design user interfaces that are intuitive and enhance user experience.",
     },
     {
         title: "Testing & QA",
-        img: "/services/app/app5.jpg",
+        img: "/services/app/app5.webp",
         desc: "We perform thorough testing to ensure your app is bug-free, secure, and runs smoothly on all target devices.",
     },
     {
         title: "Deployment",
-        img: "/services/app/app6.jpg",
+        img: "/services/app/app6.webp",
         desc: "We launch your app on the App Store, Google Play, or web platform with full support for approvals and publishing.",
     },
 ];

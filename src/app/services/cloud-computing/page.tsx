@@ -85,49 +85,49 @@ export default function Page() {
             title: "Infrastructure as a Service (IaaS)",
             description:
                 "Provides virtualized computing resources over the internet, such as servers, storage, and networking.",
-            img: "/services/cloud/iaas.png",
+            img: "/services/cloud/iaas.webp",
         },
         {
             title: "Platform as a Service (PaaS)",
             description:
                 "PaaS delivers a cloud-based environment for developers to build, deploy, and manage applications. It includes everything from development tools, middleware, to the operating system.",
-            img: "/services/cloud/paas.png",
+            img: "/services/cloud/paas.webp",
         },
         {
             title: "Cloud Hosting",
             description:
                 "Secure, reliable cloud hosting solutions for businesses of all sizes.",
-            img: "/services/cloud/saas.png",
+            img: "/services/cloud/saas.webp",
         },
         {
             title: "Security as a Service (SECaaS)",
             description:
                 "Provides cloud-based security solutions, including firewalls, antivirus, and encryption, to protect against cyber threats.",
-            img: "/services/cloud/globe-grid.png",
+            img: "/services/cloud/globe-grid.webp",
         },
         {
             title: "Backup as a Service (BaaS)",
             description:
                 "Automatically backs up data to the cloud, ensuring disaster recovery and protection from data loss.",
-            img: "/services/cloud/data-recovery.png",
+            img: "/services/cloud/data-recovery.webp",
         },
         {
             title: "Function as a Service / Serverless Computing",
             description:
                 "Allows developers to run code in response to events without managing servers, scaling automatically as needed.",
-            img: "/services/cloud/innovation.png",
+            img: "/services/cloud/innovation.webp",
         },
         {
             title: "Storage as a Service (STaaS)",
             description:
                 "Provides scalable, on-demand storage solutions over the cloud, allowing businesses to store and access data securely.",
-            img: "/services/cloud/cloud-sync.png",
+            img: "/services/cloud/cloud-sync.webp",
         },
         {
             title: "Database as a Service (DBaaS)",
             description:
                 "Offers managed databases in the cloud, eliminating the need for physical hardware and simplifying database management.",
-            img: "/services/cloud/database.png",
+            img: "/services/cloud/database.webp",
         },
     ];
 
@@ -147,7 +147,7 @@ export default function Page() {
 
                 <div className="mb-8 lg:mb-0">
                     <Image
-                        src="/services/cloud/cloud-banner.png"
+                        src="/services/cloud/cloud-banner.webp"
                         alt="Cybersecurity Illustration"
                         width={600}
                         height={400}

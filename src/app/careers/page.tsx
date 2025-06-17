@@ -18,32 +18,32 @@ interface JobCardProps {
 const jobs: Job[] = [
     {
         title: "CyberSecurity Expert",
-        icon: "/career/hacker.png",
+        icon: "/career/hacker.webp",
         location: "SIKAR",
     },
     {
         title: "Graphic Designer",
-        icon: "/career/graphic-designer.png",
+        icon: "/career/graphic-designer.webp",
         location: "SIKAR",
     },
     {
         title: "Digital Marketing",
-        icon: "/career/social-media.png",
+        icon: "/career/social-media.webp",
         location: "SIKAR",
     },
     {
         title: "Full Stack Developer",
-        icon: "/career/app-development.png",
+        icon: "/career/app-development.webp",
         location: "SIKAR",
     },
     {
         title: "Android Developer",
-        icon: "/career/android.png",
+        icon: "/career/android.webp",
         location: "SIKAR",
     },
     {
         title: "Content Writing",
-        icon: "/career/content-writing.png",
+        icon: "/career/content-writing.webp",
         location: "SIKAR",
     },
 ];

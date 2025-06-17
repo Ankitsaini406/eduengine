@@ -40,28 +40,28 @@ const CARD_DATA = [
         title: "User-Centric UI/UX Approach",
         description:
             "Intuitive, visually appealing designs focused on usability, accessibility, and seamless user experience.",
-        image: "/services/graphic-design/graphic-success.jpg",
+        image: "/services/graphic-design/graphic-success.webp",
         bgColor: "bg-blue-300",
     },
     {
         title: "Fast-Loading & Optimized Design",
         description:
             "Performance-focused builds with fast load times and seamless experiences across all devices.",
-        image: "/services/web/seo.jpg",
+        image: "/services/web/seo.webp",
         bgColor: "bg-orange-300",
     },
     {
         title: "Responsive Across All Devices",
         description:
             "Mobile-first, responsive designs that adapt to any screen size for consistent user experience.",
-        image: "/services/web/phone.jpg",
+        image: "/services/web/phone.webp",
         bgColor: "bg-fuchsia-100",
     },
     {
         title: "Custom Design for Every Brand",
         description:
             "Unique designs tailored to your brand's goals, values, and audience, making your presence stand out.",
-        image: "/services/web/leptop.jpg",
+        image: "/services/web/leptop.webp",
         bgColor: "bg-orange-300",
     },
 ];
@@ -71,37 +71,37 @@ const PROCESS_STEPS = [
         title: "E-commerce Platforms",
         description:
             "Build secure, scalable, and user-friendly e-commerce websites with integrated payment gateways and product management systems.",
-        image: "/services/app/app1.jpg",
+        image: "/services/app/app1.webp",
     },
     {
         title: "Custom Web Applications",
         description:
             "Develop custom web applications designed to meet your business needs with advanced functionalities.",
-        image: "/services/app/app2.jpg",
+        image: "/services/app/app2.webp",
     },
     {
         title: "SEO-Friendly Websites",
         description:
             " Our websites are optimized for search engines to enhance your visibility and rank higher in search results.",
-        image: "/services/app/app3.jpg",
+        image: "/services/app/app3.webp",
     },
     {
         title: "TESTING & QUALITY ASSURANCE",
         description:
             "Thorough testing ensures responsiveness, performance, and bug-free deployment.",
-        image: "/services/app/app4.jpg",
+        image: "/services/app/app4.webp",
     },
     {
         title: "Responsive Designs",
         description:
             "Websites that look great on every device, from desktop to mobile, ensuring an optimal user experience.",
-        image: "/services/app/app5.jpg",
+        image: "/services/app/app5.webp",
     },
     {
         title: "Support & Growth",
         description:
             "We offer ongoing support, performance monitoring, and updates to foster growth.",
-        image: "/services/app/app6.jpg",
+        image: "/services/app/app6.webp",
     },
 ];
 
@@ -162,7 +162,7 @@ export default async function Page() {
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center">
                         <Image
-                            src="/services/web/tree.png"
+                            src="/services/web/tree.webp"
                             alt="Web Development"
                             width={500}
                             height={400}

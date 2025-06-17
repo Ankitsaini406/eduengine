@@ -80,15 +80,15 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 export default async function Page() {
     const serviceData = [
-        { title: "Model Development", img: "/services/ml/business-model.png" },
-        { title: "Data Collection", img: "/services/ml/data-collection.png" },
-        { title: "Predictive Analytics", img: "/services/ml/analysis.png" },
-        { title: "Computer Vision", img: "/services/ml/opportunity.png" },
-        { title: "Recommendation Systems", img: "/services/ml/setting.png" },
-        { title: "Anomaly Detection", img: "/services/ml/detective.png" },
-        { title: "Model Deployment", img: "/services/ml/project-launch.png" },
-        { title: "Model Monitoring", img: "/services/ml/monitoring.png" },
-        { title: "Machine Learning Consulting", img: "/services/ml/conversation.png" },
+        { title: "Model Development", img: "/services/ml/business-model.webp" },
+        { title: "Data Collection", img: "/services/ml/data-collection.webp" },
+        { title: "Predictive Analytics", img: "/services/ml/analysis.webp" },
+        { title: "Computer Vision", img: "/services/ml/opportunity.webp" },
+        { title: "Recommendation Systems", img: "/services/ml/setting.webp" },
+        { title: "Anomaly Detection", img: "/services/ml/detective.webp" },
+        { title: "Model Deployment", img: "/services/ml/project-launch.webp" },
+        { title: "Model Monitoring", img: "/services/ml/monitoring.webp" },
+        { title: "Machine Learning Consulting", img: "/services/ml/conversation.webp" },
     ];
 
     return (
@@ -105,7 +105,7 @@ export default async function Page() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16">
                     <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto group">
                         <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                        <Image src="/services/ml/custom.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                        <Image src="/services/ml/custom.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Custom Model</h3>
                             <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We design and train machine learning models specifically for your business goals, ensuring accurate and efficient solutions.</h4>
@@ -114,7 +114,7 @@ export default async function Page() {
                     <div className="flex flex-col gap-4">
                         <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
                             <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                            <Image src="/services/ml/intelligent.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                            <Image src="/services/ml/intelligent.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Intelligent Data Processing</h3>
                                 <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">We clean, organize, and optimize your raw data, making it ready for powerful machine learning applications.</h4>
@@ -122,7 +122,7 @@ export default async function Page() {
                         </div>
                         <div className="relative rounded-2xl overflow-hidden min-h-[200px] group">
                             <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                            <Image src="/services/ml/paper.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                            <Image src="/services/ml/paper.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                             <div className="relative z-20 p-4">
                                 <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Natural Language Understanding</h3>
                                 <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Develop systems that can read, interpret, and respond to human language across different platforms and industries.</h4>
@@ -131,7 +131,7 @@ export default async function Page() {
                     </div>
                     <div className="relative rounded-2xl overflow-hidden min-h-[200px] md:min-h-auto group">
                         <div className="absolute z-10 inset-0 bg-black opacity-50 duration-300 group-hover:opacity-40"></div>
-                        <Image src="/services/ml/fraud.jpg" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
+                        <Image src="/services/ml/fraud.webp" alt="Design Element 1" fill className="object-cover group-hover:scale-105 duration-300" />
                         <div className="relative z-20 p-4">
                             <h3 className="font-bold text-2xl pb-2 duration-300 group-hover:opacity-0">Fraud and Anomaly Detection</h3>
                             <h4 className="text-sm opacity-60 duration-300 group-hover:opacity-0">Protect your operations by identifying unusual activities and treats before they impact your business.</h4>
@@ -167,7 +167,7 @@ export default async function Page() {
                     <Image
                         height={300}
                         width={400}
-                        src="/services/ml/ml-last.jpg"
+                        src="/services/ml/ml-last.webp"
                         alt="Design Portfolio"
                         className="max-w-xs xl:max-w-xl rounded-bl-[50%] rounded-tr-[50%] shadow-md shadow-gray-500"
                     />

@@ -87,49 +87,49 @@ const Cybersecurity = () => {
             title: "Incident Response & Digital Forensics",
             description:
                 "Our specialized team quickly identifies and neutralizes security breaches while conducting in-depth forensic analysis to trace their origins. We help you recover swiftly and strengthen your defenses—ensuring your operations stay secure and uninterrupted.",
-            img: "/services/cyber-security/user.png",
+            img: "/services/cyber-security/user.webp",
         },
         {
             title: "Data Encryption",
             description:
                 "Shield your sensitive information—both in storage and during transmission—with enterprise-grade encryption. Our end-to-end solutions ensure confidentiality, data integrity, and strong defense against unauthorized access and cyber threats.",
-            img: "/services/cyber-security/key.png",
+            img: "/services/cyber-security/key.webp",
         },
         {
             title: "Comprehensive Protection for Every Device",
             description:
                 "Our all-in-one endpoint security solutions shield your devices and networks from malware, ransomware, and evolving cyber threats. With real-time detection and rapid response, we help protect sensitive data and keep your business running without interruption.",
-            img: "/services/cyber-security/lock.png",
+            img: "/services/cyber-security/lock.webp",
         },
         {
             title: "Network Security Solutions",
             description:
                 "Protect your infrastructure from unauthorized access and data breaches with cutting-edge security solutions. Stay ahead of evolving threats and ensure network integrity with powerful firewalls and proactive defense strategies.",
-            img: "/services/cyber-security/network.png",
+            img: "/services/cyber-security/network.webp",
         },
         {
             title: "Cloud Security Solutions",
             description:
                 "Protect your infrastructure from unauthorized access and data breaches with cutting-edge security solutions. Stay ahead of evolving threats and ensure network integrity with powerful firewalls and proactive defense strategies.",
-            img: "/services/cyber-security/cloud.png",
+            img: "/services/cyber-security/cloud.webp",
         },
         {
             title: "Security Awareness Training",
             description:
                 "Equip your employees with the knowledge and skills to identify and prevent cyber threats. Our tailored security awareness training programs promote best practices, minimize human error, and fortify your organization’s security framework.",
-            img: "/services/cyber-security/secure-shield.png",
+            img: "/services/cyber-security/secure-shield.webp",
         },
         {
             title: "Backup & Disaster Recovery",
             description:
                 "Protect your critical data and recover quickly from any disruption with our automated backup and disaster recovery services. We provide secure, encrypted backups with fast restoration to keep your operations running no matter what.",
-            img: "/services/cloud/cloud-sync.png",
+            img: "/services/cloud/cloud-sync.webp",
         },
         {
             title: "Threat Intelligence & Monitoring",
             description:
                 "Stay ahead of cyber threats with continuous monitoring and actionable threat intelligence. Our platform aggregates global threat data and uses AI-driven analytics to detect anomalies and prevent attacks before they impact your business.",
-            img: "/services/cyber-security/performance.png",
+            img: "/services/cyber-security/performance.webp",
         },
     ];
 
@@ -160,7 +160,7 @@ const Cybersecurity = () => {
                 {/* Image on right */}
                 <div className="">
                     <Image
-                        src="/services/cyber-security/cyberbanner.png"
+                        src="/services/cyber-security/cyberbanner.webp"
                         alt="Cybersecurity Illustration"
                         width={600}
                         height={300}
