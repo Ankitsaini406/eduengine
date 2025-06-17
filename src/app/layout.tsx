@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ChildLayout from "./Childlayout";
 import SplashScreen from "./SplashScreen";
-import GoogleTagManagerAndAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Eduengine | Expert Digital Solutions Agency | Web, App, Cloud, AI",
@@ -53,7 +52,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         {/* ✅ GTM/Analytics */}
-        <GoogleTagManagerAndAnalytics />
       </head>
       <body className="antialiased bg-background text-foreground">
         <SplashScreen />
