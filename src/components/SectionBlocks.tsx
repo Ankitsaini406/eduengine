@@ -47,7 +47,7 @@ export default function ServiceBlock({
             <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 200 }}
-                className="relative w-full h-[300px] md:h-[400px] md:w-[500px]"
+                className="relative w-full h-[350px] md:h-[400px] md:w-[500px]"
             >
                 <Image
                     className="bg-gray-800 p-0 rounded-xl w-full max-w-md shadow-lg"
