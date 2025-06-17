@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import { Metadata } from 'next';
 
 interface ProjectItem {
     src: string;
@@ -7,7 +8,50 @@ interface ProjectItem {
     external: boolean;
 }
 
-export default function Page() {
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "About Eduengine | Digital Solutions for Business Growth",
+        description:
+            "Eduengine offers expert digital solutions—marketing, app development, AI, design & cybersecurity—to help businesses grow and thrive in the digital era.",
+        alternates: {
+            canonical: "https://eduengine.in/about-us",
+        },
+        keywords: [
+            "App Development Services",
+            "Mobile App Development",
+            "iOS App Development",
+            "Android App Development",
+            "Cross-Platform Apps",
+            "Eduengine App Solutions",
+            "Web App Development",
+            "Custom Software Development",
+        ],
+        openGraph: {
+            title: "App Development Services | iOS, Android & Web Solutions | Eduengine",
+            description:
+                "Launch powerful iOS, Android, and web applications with Eduengine. From UI/UX to deployment, we create custom apps that engage users and grow businesses.",
+            url: "https://eduengine.in/services/app-development",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/og-app-development.jpg",
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Eduengine App Development Services",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Mobile & Web App Development Services | Eduengine",
+            description:
+                "Eduengine builds custom Android, iOS, and web applications with seamless performance and modern design. Let's bring your app idea to life.",
+            // images: ["https://eduengine.in/og-app-development.jpg"],
+        },
+    };
+};
+
+export default async function Page() {
 
     const projects: ProjectItem[] = [
         {

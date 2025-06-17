@@ -1,5 +1,6 @@
 import ServiceBlock from "@/components/SectionBlocks";
 import TextFade from "@/components/TextFade";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -67,6 +68,50 @@ const fetchImageUrl = async () => {
   ); // No caching
   const data = await response.json();
   return data.imageUrl;
+};
+
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Expert Digital Solutions Agency | Web, App, Cloud, AI",
+        description:
+            "Powerful digital services: web & app development, AI, cloud, cybersecurity & design. Scalable tech solutions to grow your business. Get a free consultation!",
+        alternates: {
+            canonical: "https://eduengine.in/",
+        },
+        keywords: [
+            "Web Development",
+            "Mobile App Development",
+            "Cloud Computing",
+            "Cybersecurity Services",
+            "AI Solutions",
+            "Graphic Design",
+            "Eduengine Digital Agency",
+            "Full-Stack Development",
+            "UI/UX Design",
+            "Custom Software Development",
+        ],
+        openGraph: {
+            title: "Eduengine | Scalable Web, App, AI & Cloud Solutions",
+            description:
+                "Transform your business with Eduengine's cutting-edge services in web and app development, AI, cloud computing, cybersecurity, and design. Trusted by modern startups and enterprises.",
+            url: "https://eduengine.in/",
+            type: "website",
+            images: [
+                {
+                    url: "https://eduengine.in/hero.webp",
+                    width: 1200,
+                    height: 630,
+                    alt: "Eduengine - Smart Digital Solutions",
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Eduengine | Smart Digital Services to Scale Your Business",
+            description:
+                "We build custom apps, websites, cloud systems, and AI-driven solutions with secure infrastructure and modern design. Explore how Eduengine can help your business grow.",
+        },
+    };
 };
 
 export default async function Home() {

@@ -1,4 +1,51 @@
-export default function Page() {
+import { Metadata } from "next";
+
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Privacy Policy | Eduengine Technologies Pvt. Ltd.",
+        description:
+            "Review Eduengine’s privacy policy to understand how we collect, use, and protect your personal data when you interact with our website or services.",
+        alternates: {
+            canonical: "https://eduengine.in/privacy-policy",
+        },
+        keywords: [
+            "Eduengine Privacy Policy",
+            "User Data Protection",
+            "Data Privacy Practices",
+            "Personal Information Security",
+            "Web Privacy Policy",
+            "Cookie Usage",
+            "Eduengine Terms",
+            "Data Usage Policy",
+            "Information Collection",
+            "GDPR Compliance",
+        ],
+        openGraph: {
+            title: "Privacy Policy | Eduengine - Your Data, Your Rights",
+            description:
+                "Eduengine is committed to protecting your privacy. Read our privacy policy to learn how we handle your information securely and responsibly.",
+            url: "https://eduengine.in/privacy-policy",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/privacy-hero.webp", // You can replace this with your actual privacy image
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Eduengine Privacy Policy",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Privacy Policy | How Eduengine Protects Your Data",
+            description:
+                "Learn how Eduengine collects, uses, and protects your information. Our privacy policy ensures transparency and trust.",
+        },
+    };
+};
+
+
+export default async function Page() {
     return (
         <main className="py-20 px-3">
             <div className="container mx-auto p-6">

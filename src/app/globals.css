@@ -76,6 +76,7 @@ html, body {
 
   body {
     background-color: hsl(var(--background));
+    font-family: 'Manrope', sans-serif;
     color: hsl(var(--foreground));
     box-sizing: border-box;
   }

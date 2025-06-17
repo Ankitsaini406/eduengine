@@ -146,7 +146,7 @@ export default function Footer() {
                                 <li key={name} className="group relative overflow-hidden">
                                     <Link href={href} target="_blank" className="relative z-10 inline-block">
                                         {name}
-                                        <span className="absolute left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                                        <span className="absolute -ml-2 left-0 bottom-0 h-0.5 w-full bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                                     </Link>
                                 </li>
                             ))}
@@ -162,7 +162,7 @@ export default function Footer() {
                         <div>
                             <p className="font-semibold text-lg">Email</p>
                             <Link href="mailto:director@eduengine.com">
-                                Email Here
+                                director@eduengine.com
                             </Link>
                         </div>
                         <div>

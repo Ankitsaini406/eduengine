@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import FaqSection from "@/components/FrequentyQuestion";
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
+import { Metadata } from "next";
 
 interface Job {
     title: string;
@@ -80,7 +81,51 @@ const faqQuestions = [
     },
 ];
 
-export default function Page() {
+export const generateMetadata = async (): Promise<Metadata> => {
+    return {
+        title: "Careers at Eduengine | Join Our Team of Innovators",
+        description:
+            "Explore exciting career opportunities at Eduengine. We’re hiring developers, designers, marketers & more. Work on cutting-edge web, cloud, AI, and cybersecurity projects.",
+        alternates: {
+            canonical: "https://eduengine.in/careers",
+        },
+        keywords: [
+            "Careers at Eduengine",
+            "Tech Jobs in India",
+            "Software Developer Jobs",
+            "UI/UX Design Careers",
+            "Cloud Engineer Jobs",
+            "AI and Machine Learning Jobs",
+            "Cybersecurity Jobs",
+            "Frontend Developer Jobs",
+            "Backend Developer Jobs",
+            "Join Eduengine Team",
+        ],
+        openGraph: {
+            title: "Careers at Eduengine | Tech Jobs in Web, AI, Cloud & More",
+            description:
+                "Looking to grow your tech career? Join Eduengine and work on impactful digital solutions in web, app, cloud, cybersecurity, and AI.",
+            url: "https://eduengine.in/careers",
+            type: "website",
+            // images: [
+            //     {
+            //         url: "https://eduengine.in/careers-hero.webp",
+            //         width: 1200,
+            //         height: 630,
+            //         alt: "Careers at Eduengine - Join Our Team",
+            //     },
+            // ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Careers at Eduengine | Work on World-Class Tech Projects",
+            description:
+                "Be part of an innovative team delivering full-stack digital solutions. Check out open roles and grow your career with Eduengine.",
+        },
+    };
+};
+
+export default async function Page() {
 
     return (
         <div className="relative w-full">
