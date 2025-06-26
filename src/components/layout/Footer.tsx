@@ -17,8 +17,11 @@ const serviceLinks = [
 ];
 
 const aboutLinks = [
-    { name: "Contact Us", href: "/contact-us" },
     { name: "About Us", href: "/about-us" },
+    { name: "Contact Us", href: "/contact-us" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms Service", href: "/terms-service" },
+    { name: "Refund Policy", href: "/refund-policy" },
     { name: "Careers", href: "/careers" },
 ];
 
